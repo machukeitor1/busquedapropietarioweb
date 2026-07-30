@@ -1,0 +1,3116 @@
+[
+  {
+    "codigoSii": "15101",
+    "nombre": "Arica",
+    "nombreApi": "ARICA",
+    "tgrRegion": "15",
+    "tgrComuna": "1",
+    "lat": -18.477,
+    "lon": -70.322
+  },
+  {
+    "codigoSii": "15102",
+    "nombre": "Camarones",
+    "nombreApi": "CAMARONES",
+    "tgrRegion": "15",
+    "tgrComuna": "295",
+    "lat": -19.009,
+    "lon": -69.907
+  },
+  {
+    "codigoSii": "15201",
+    "nombre": "Putre",
+    "nombreApi": "PUTRE",
+    "tgrRegion": "15",
+    "tgrComuna": "294",
+    "lat": -18.18,
+    "lon": -69.554
+  },
+  {
+    "codigoSii": "15202",
+    "nombre": "Gral. Lagos",
+    "nombreApi": "GRAL LAGOS",
+    "tgrRegion": "15",
+    "tgrComuna": "293",
+    "lat": -17.832,
+    "lon": -69.609
+  },
+  {
+    "codigoSii": "1101",
+    "nombre": "Iquique",
+    "nombreApi": "IQUIQUE",
+    "tgrRegion": "1",
+    "tgrComuna": "2",
+    "lat": -20.223,
+    "lon": -70.146
+  },
+  {
+    "codigoSii": "1107",
+    "nombre": "Alto Hospicio",
+    "nombreApi": "ALTO HOSPICIO",
+    "tgrRegion": "1",
+    "tgrComuna": "347",
+    "lat": -20.268,
+    "lon": -70.101
+  },
+  {
+    "codigoSii": "1401",
+    "nombre": "Pozo Almonte",
+    "nombreApi": "POZO ALMONTE",
+    "tgrRegion": "1",
+    "tgrComuna": "5",
+    "lat": -20.253,
+    "lon": -69.785
+  },
+  {
+    "codigoSii": "1402",
+    "nombre": "Camiña",
+    "nombreApi": "CAMINA",
+    "tgrRegion": "1",
+    "tgrComuna": "296",
+    "lat": -19.312,
+    "lon": -69.426
+  },
+  {
+    "codigoSii": "1403",
+    "nombre": "Colchane",
+    "nombreApi": "COLCHANE",
+    "tgrRegion": "1",
+    "tgrComuna": "297",
+    "lat": -19.279,
+    "lon": -68.634
+  },
+  {
+    "codigoSii": "1404",
+    "nombre": "Huara",
+    "nombreApi": "HUARA",
+    "tgrRegion": "1",
+    "tgrComuna": "3",
+    "lat": -19.996,
+    "lon": -69.772
+  },
+  {
+    "codigoSii": "1405",
+    "nombre": "Pica",
+    "nombreApi": "PICA",
+    "tgrRegion": "1",
+    "tgrComuna": "4",
+    "lat": -20.489,
+    "lon": -69.329
+  },
+  {
+    "codigoSii": "2101",
+    "nombre": "Antofagasta",
+    "nombreApi": "ANTOFAGASTA",
+    "tgrRegion": "2",
+    "tgrComuna": "7",
+    "lat": -23.65,
+    "lon": -70.407
+  },
+  {
+    "codigoSii": "2102",
+    "nombre": "Mejillones",
+    "nombreApi": "MEJILLONES",
+    "tgrRegion": "2",
+    "tgrComuna": "8",
+    "lat": -23.096,
+    "lon": -70.45
+  },
+  {
+    "codigoSii": "2103",
+    "nombre": "Sierra Gorda",
+    "nombreApi": "SIERRA GORDA",
+    "tgrRegion": "2",
+    "tgrComuna": "299",
+    "lat": -22.892,
+    "lon": -69.32
+  },
+  {
+    "codigoSii": "2104",
+    "nombre": "Taltal",
+    "nombreApi": "TALTAL",
+    "tgrRegion": "2",
+    "tgrComuna": "9",
+    "lat": -25.405,
+    "lon": -70.483
+  },
+  {
+    "codigoSii": "2201",
+    "nombre": "Calama",
+    "nombreApi": "CALAMA",
+    "tgrRegion": "2",
+    "tgrComuna": "10",
+    "lat": -22.454,
+    "lon": -68.934
+  },
+  {
+    "codigoSii": "2202",
+    "nombre": "Ollagüe",
+    "nombreApi": "OLLAGUE",
+    "tgrRegion": "2",
+    "tgrComuna": "300",
+    "lat": -21.224,
+    "lon": -68.253
+  },
+  {
+    "codigoSii": "2203",
+    "nombre": "San Pedro de Atacama",
+    "nombreApi": "SAN PEDRO DE ATACAMA",
+    "tgrRegion": "2",
+    "tgrComuna": "301",
+    "lat": -22.916,
+    "lon": -68.2
+  },
+  {
+    "codigoSii": "2301",
+    "nombre": "Tocopilla",
+    "nombreApi": "TOCOPILLA",
+    "tgrRegion": "2",
+    "tgrComuna": "6",
+    "lat": -22.086,
+    "lon": -70.193
+  },
+  {
+    "codigoSii": "2302",
+    "nombre": "María Elena",
+    "nombreApi": "MARIA ELENA",
+    "tgrRegion": "2",
+    "tgrComuna": "298",
+    "lat": -22.164,
+    "lon": -69.417
+  },
+  {
+    "codigoSii": "3101",
+    "nombre": "Copiapó",
+    "nombreApi": "COPIAPO",
+    "tgrRegion": "3",
+    "tgrComuna": "13",
+    "lat": -27.365,
+    "lon": -70.331
+  },
+  {
+    "codigoSii": "3102",
+    "nombre": "Caldera",
+    "nombreApi": "CALDERA",
+    "tgrRegion": "3",
+    "tgrComuna": "14",
+    "lat": -27.067,
+    "lon": -70.817
+  },
+  {
+    "codigoSii": "3103",
+    "nombre": "Tierra Amarilla",
+    "nombreApi": "TIERRA AMARILLA",
+    "tgrRegion": "3",
+    "tgrComuna": "15",
+    "lat": -27.488,
+    "lon": -70.27
+  },
+  {
+    "codigoSii": "3201",
+    "nombre": "Chañaral",
+    "nombreApi": "CHANARAL",
+    "tgrRegion": "3",
+    "tgrComuna": "11",
+    "lat": -26.343,
+    "lon": -70.611
+  },
+  {
+    "codigoSii": "3202",
+    "nombre": "Diego de Almagro",
+    "nombreApi": "DIEGO DE ALMAGRO",
+    "tgrRegion": "3",
+    "tgrComuna": "12",
+    "lat": -26.377,
+    "lon": -70.049
+  },
+  {
+    "codigoSii": "3301",
+    "nombre": "Vallenar",
+    "nombreApi": "VALLENAR",
+    "tgrRegion": "3",
+    "tgrComuna": "16",
+    "lat": -28.578,
+    "lon": -70.757
+  },
+  {
+    "codigoSii": "3302",
+    "nombre": "Alto del Carmen",
+    "nombreApi": "ALTO DEL CARMEN",
+    "tgrRegion": "3",
+    "tgrComuna": "302",
+    "lat": -28.751,
+    "lon": -70.488
+  },
+  {
+    "codigoSii": "3303",
+    "nombre": "Freirina",
+    "nombreApi": "FREIRINA",
+    "tgrRegion": "3",
+    "tgrComuna": "17",
+    "lat": -28.5,
+    "lon": -71.076
+  },
+  {
+    "codigoSii": "3304",
+    "nombre": "Huasco",
+    "nombreApi": "HUASCO",
+    "tgrRegion": "3",
+    "tgrComuna": "18",
+    "lat": -28.452,
+    "lon": -71.224
+  },
+  {
+    "codigoSii": "4101",
+    "nombre": "La Serena",
+    "nombreApi": "LA SERENA",
+    "tgrRegion": "4",
+    "tgrComuna": "19",
+    "lat": -29.897,
+    "lon": -71.242
+  },
+  {
+    "codigoSii": "4102",
+    "nombre": "Coquimbo",
+    "nombreApi": "COQUIMBO",
+    "tgrRegion": "4",
+    "tgrComuna": "21",
+    "lat": -29.968,
+    "lon": -71.337
+  },
+  {
+    "codigoSii": "4103",
+    "nombre": "Andacollo",
+    "nombreApi": "ANDACOLLO",
+    "tgrRegion": "4",
+    "tgrComuna": "22",
+    "lat": -30.236,
+    "lon": -71.083
+  },
+  {
+    "codigoSii": "4104",
+    "nombre": "La Higuera",
+    "nombreApi": "LA HIGUERA",
+    "tgrRegion": "4",
+    "tgrComuna": "20",
+    "lat": -29.497,
+    "lon": -71.266
+  },
+  {
+    "codigoSii": "4105",
+    "nombre": "Paiguano",
+    "nombreApi": "PAIHUANO",
+    "tgrRegion": "4",
+    "tgrComuna": "24",
+    "lat": -30.25,
+    "lon": -70.383
+  },
+  {
+    "codigoSii": "4106",
+    "nombre": "Vicuña",
+    "nombreApi": "VICUNA",
+    "tgrRegion": "4",
+    "tgrComuna": "23",
+    "lat": -30.029,
+    "lon": -70.711
+  },
+  {
+    "codigoSii": "4201",
+    "nombre": "Illapel",
+    "nombreApi": "ILLAPEL",
+    "tgrRegion": "4",
+    "tgrComuna": "30",
+    "lat": -31.624,
+    "lon": -71.163
+  },
+  {
+    "codigoSii": "4202",
+    "nombre": "Canela",
+    "nombreApi": "CANELA",
+    "tgrRegion": "4",
+    "tgrComuna": "31",
+    "lat": -31.394,
+    "lon": -71.458
+  },
+  {
+    "codigoSii": "4203",
+    "nombre": "Los Vilos",
+    "nombreApi": "LOS VILOS",
+    "tgrRegion": "4",
+    "tgrComuna": "33",
+    "lat": -31.916,
+    "lon": -71.511
+  },
+  {
+    "codigoSii": "4204",
+    "nombre": "Salamanca",
+    "nombreApi": "SALAMANCA",
+    "tgrRegion": "4",
+    "tgrComuna": "32",
+    "lat": -31.774,
+    "lon": -70.972
+  },
+  {
+    "codigoSii": "4301",
+    "nombre": "Ovalle",
+    "nombreApi": "OVALLE",
+    "tgrRegion": "4",
+    "tgrComuna": "25",
+    "lat": -30.594,
+    "lon": -71.198
+  },
+  {
+    "codigoSii": "4302",
+    "nombre": "Combarbalá",
+    "nombreApi": "COMBARBALA",
+    "tgrRegion": "4",
+    "tgrComuna": "29",
+    "lat": -31.176,
+    "lon": -70.998
+  },
+  {
+    "codigoSii": "4303",
+    "nombre": "Monte Patria",
+    "nombreApi": "MONTE PATRIA",
+    "tgrRegion": "4",
+    "tgrComuna": "26",
+    "lat": -30.829,
+    "lon": -70.698
+  },
+  {
+    "codigoSii": "4304",
+    "nombre": "Punitaqui",
+    "nombreApi": "PUNITAQUI",
+    "tgrRegion": "4",
+    "tgrComuna": "27",
+    "lat": -30.826,
+    "lon": -71.259
+  },
+  {
+    "codigoSii": "4305",
+    "nombre": "Río Hurtado",
+    "nombreApi": "RIO HURTADO",
+    "tgrRegion": "4",
+    "tgrComuna": "28",
+    "lat": -30.26,
+    "lon": -70.667
+  },
+  {
+    "codigoSii": "5101",
+    "nombre": "Valparaíso",
+    "nombreApi": "VALPARAISO",
+    "tgrRegion": "5",
+    "tgrComuna": "34",
+    "lat": -33.044,
+    "lon": -71.623
+  },
+  {
+    "codigoSii": "5102",
+    "nombre": "Casablanca",
+    "nombreApi": "CASABLANCA",
+    "tgrRegion": "5",
+    "tgrComuna": "40",
+    "lat": -33.326,
+    "lon": -71.398
+  },
+  {
+    "codigoSii": "5103",
+    "nombre": "Concón",
+    "nombreApi": "CONCON",
+    "tgrRegion": "5",
+    "tgrComuna": "340",
+    "lat": -32.931,
+    "lon": -71.519
+  },
+  {
+    "codigoSii": "5104",
+    "nombre": "Juan Fernández",
+    "nombreApi": "JUAN FERNANDEZ",
+    "tgrRegion": "5",
+    "tgrComuna": "321",
+    "lat": -33.617,
+    "lon": -78.867
+  },
+  {
+    "codigoSii": "5105",
+    "nombre": "Puchuncaví",
+    "nombreApi": "PUCHUNCAVI",
+    "tgrRegion": "5",
+    "tgrComuna": "36",
+    "lat": -32.75,
+    "lon": -71.396
+  },
+  {
+    "codigoSii": "5107",
+    "nombre": "Quintero",
+    "nombreApi": "QUINTERO",
+    "tgrRegion": "5",
+    "tgrComuna": "35",
+    "lat": -32.787,
+    "lon": -71.527
+  },
+  {
+    "codigoSii": "5109",
+    "nombre": "Viña del Mar",
+    "nombreApi": "VINA DEL MAR",
+    "tgrRegion": "5",
+    "tgrComuna": "37",
+    "lat": -33.045,
+    "lon": -71.522
+  },
+  {
+    "codigoSii": "5201",
+    "nombre": "Isla de Pascua",
+    "nombreApi": "ISLA DE PASCUA",
+    "tgrRegion": "5",
+    "tgrComuna": "41",
+    "lat": -27.15,
+    "lon": -109.423
+  },
+  {
+    "codigoSii": "5301",
+    "nombre": "Los Andes",
+    "nombreApi": "LOS ANDES",
+    "tgrRegion": "5",
+    "tgrComuna": "66",
+    "lat": -32.835,
+    "lon": -70.597
+  },
+  {
+    "codigoSii": "5302",
+    "nombre": "Calle Larga",
+    "nombreApi": "CALLE LARGA",
+    "tgrRegion": "5",
+    "tgrComuna": "67",
+    "lat": -32.951,
+    "lon": -70.552
+  },
+  {
+    "codigoSii": "5303",
+    "nombre": "Rinconada",
+    "nombreApi": "RINCONADA",
+    "tgrRegion": "5",
+    "tgrComuna": "68",
+    "lat": -32.877,
+    "lon": -70.709
+  },
+  {
+    "codigoSii": "5304",
+    "nombre": "San Esteban",
+    "nombreApi": "SAN ESTEBAN",
+    "tgrRegion": "5",
+    "tgrComuna": "69",
+    "lat": -32.693,
+    "lon": -70.37
+  },
+  {
+    "codigoSii": "5401",
+    "nombre": "La Ligua",
+    "nombreApi": "LA LIGUA",
+    "tgrRegion": "5",
+    "tgrComuna": "59",
+    "lat": -32.449,
+    "lon": -71.231
+  },
+  {
+    "codigoSii": "5402",
+    "nombre": "Cabildo",
+    "nombreApi": "CABILDO",
+    "tgrRegion": "5",
+    "tgrComuna": "56",
+    "lat": -32.41,
+    "lon": -71.08
+  },
+  {
+    "codigoSii": "5403",
+    "nombre": "Papudo",
+    "nombreApi": "PAPUDO",
+    "tgrRegion": "5",
+    "tgrComuna": "57",
+    "lat": -32.47,
+    "lon": -71.384
+  },
+  {
+    "codigoSii": "5404",
+    "nombre": "Petorca",
+    "nombreApi": "PETORCA",
+    "tgrRegion": "5",
+    "tgrComuna": "55",
+    "lat": -32.197,
+    "lon": -70.832
+  },
+  {
+    "codigoSii": "5405",
+    "nombre": "Zapallar",
+    "nombreApi": "ZAPALLAR",
+    "tgrRegion": "5",
+    "tgrComuna": "58",
+    "lat": -32.593,
+    "lon": -71.369
+  },
+  {
+    "codigoSii": "5501",
+    "nombre": "Quillota",
+    "nombreApi": "QUILLOTA",
+    "tgrRegion": "5",
+    "tgrComuna": "48",
+    "lat": -32.879,
+    "lon": -71.251
+  },
+  {
+    "codigoSii": "5502",
+    "nombre": "La Calera",
+    "nombreApi": "LA CALERA",
+    "tgrRegion": "5",
+    "tgrComuna": "50",
+    "lat": -32.784,
+    "lon": -71.159
+  },
+  {
+    "codigoSii": "5503",
+    "nombre": "Hijuelas",
+    "nombreApi": "HIJUELAS",
+    "tgrRegion": "5",
+    "tgrComuna": "51",
+    "lat": -32.867,
+    "lon": -71.093
+  },
+  {
+    "codigoSii": "5504",
+    "nombre": "La Cruz",
+    "nombreApi": "LA CRUZ",
+    "tgrRegion": "5",
+    "tgrComuna": "49",
+    "lat": -32.826,
+    "lon": -71.259
+  },
+  {
+    "codigoSii": "5506",
+    "nombre": "Nogales",
+    "nombreApi": "NOGALES",
+    "tgrRegion": "5",
+    "tgrComuna": "52",
+    "lat": -32.692,
+    "lon": -71.189
+  },
+  {
+    "codigoSii": "5601",
+    "nombre": "San Antonio",
+    "nombreApi": "SAN ANTONIO",
+    "tgrRegion": "5",
+    "tgrComuna": "42",
+    "lat": -33.581,
+    "lon": -71.613
+  },
+  {
+    "codigoSii": "5602",
+    "nombre": "Algarrobo",
+    "nombreApi": "ALGARROBO",
+    "tgrRegion": "5",
+    "tgrComuna": "44",
+    "lat": -33.333,
+    "lon": -71.602
+  },
+  {
+    "codigoSii": "5603",
+    "nombre": "Cartagena",
+    "nombreApi": "CARTAGENA",
+    "tgrRegion": "5",
+    "tgrComuna": "46",
+    "lat": -33.534,
+    "lon": -71.463
+  },
+  {
+    "codigoSii": "5604",
+    "nombre": "El Quisco",
+    "nombreApi": "EL QUISCO",
+    "tgrRegion": "5",
+    "tgrComuna": "45",
+    "lat": -33.416,
+    "lon": -71.656
+  },
+  {
+    "codigoSii": "5605",
+    "nombre": "El Tabo",
+    "nombreApi": "EL TABO",
+    "tgrRegion": "5",
+    "tgrComuna": "47",
+    "lat": -33.485,
+    "lon": -71.586
+  },
+  {
+    "codigoSii": "5606",
+    "nombre": "Santo Domingo",
+    "nombreApi": "SANTO DOMINGO",
+    "tgrRegion": "5",
+    "tgrComuna": "43",
+    "lat": -33.708,
+    "lon": -71.63
+  },
+  {
+    "codigoSii": "5701",
+    "nombre": "San Felipe",
+    "nombreApi": "SAN FELIPE",
+    "tgrRegion": "5",
+    "tgrComuna": "60",
+    "lat": -32.746,
+    "lon": -70.749
+  },
+  {
+    "codigoSii": "5702",
+    "nombre": "Catemu",
+    "nombreApi": "CATEMU",
+    "tgrRegion": "5",
+    "tgrComuna": "63",
+    "lat": -32.698,
+    "lon": -70.956
+  },
+  {
+    "codigoSii": "5703",
+    "nombre": "Llaillay",
+    "nombreApi": "LLAY LLAY",
+    "tgrRegion": "5",
+    "tgrComuna": "65",
+    "lat": -32.89,
+    "lon": -70.894
+  },
+  {
+    "codigoSii": "5704",
+    "nombre": "Panquehue",
+    "nombreApi": "PANQUEHUE",
+    "tgrRegion": "5",
+    "tgrComuna": "62",
+    "lat": -32.808,
+    "lon": -70.843
+  },
+  {
+    "codigoSii": "5705",
+    "nombre": "Putaendo",
+    "nombreApi": "PUTAENDO",
+    "tgrRegion": "5",
+    "tgrComuna": "61",
+    "lat": -32.628,
+    "lon": -70.717
+  },
+  {
+    "codigoSii": "5706",
+    "nombre": "Santa María",
+    "nombreApi": "SANTA MARIA",
+    "tgrRegion": "5",
+    "tgrComuna": "64",
+    "lat": -32.745,
+    "lon": -70.654
+  },
+  {
+    "codigoSii": "5801",
+    "nombre": "Quilpué",
+    "nombreApi": "QUILPUE",
+    "tgrRegion": "5",
+    "tgrComuna": "38",
+    "lat": -33.049,
+    "lon": -71.444
+  },
+  {
+    "codigoSii": "5802",
+    "nombre": "Limache",
+    "nombreApi": "LIMACHE",
+    "tgrRegion": "5",
+    "tgrComuna": "53",
+    "lat": -33.004,
+    "lon": -71.261
+  },
+  {
+    "codigoSii": "5803",
+    "nombre": "Olmué",
+    "nombreApi": "OLMUE",
+    "tgrRegion": "5",
+    "tgrComuna": "54",
+    "lat": -33.013,
+    "lon": -71.153
+  },
+  {
+    "codigoSii": "5804",
+    "nombre": "Villa Alemana",
+    "nombreApi": "VILLA ALEMANA",
+    "tgrRegion": "5",
+    "tgrComuna": "39",
+    "lat": -33.043,
+    "lon": -71.372
+  },
+  {
+    "codigoSii": "13101",
+    "nombre": "Santiago",
+    "nombreApi": "SANTIAGO",
+    "tgrRegion": "13",
+    "tgrComuna": "70",
+    "lat": -33.442,
+    "lon": -70.654
+  },
+  {
+    "codigoSii": "13102",
+    "nombre": "Cerrillos",
+    "nombreApi": "CERRILLOS",
+    "tgrRegion": "13",
+    "tgrComuna": "333",
+    "lat": -33.497,
+    "lon": -70.711
+  },
+  {
+    "codigoSii": "13103",
+    "nombre": "Cerro Navia",
+    "nombreApi": "CERRO NAVIA",
+    "tgrRegion": "13",
+    "tgrComuna": "324",
+    "lat": -33.427,
+    "lon": -70.743
+  },
+  {
+    "codigoSii": "13104",
+    "nombre": "Conchalí",
+    "nombreApi": "CONCHALI",
+    "tgrRegion": "13",
+    "tgrComuna": "75",
+    "lat": -33.386,
+    "lon": -70.673
+  },
+  {
+    "codigoSii": "13105",
+    "nombre": "El Bosque",
+    "nombreApi": "EL BOSQUE",
+    "tgrRegion": "13",
+    "tgrComuna": "338",
+    "lat": -33.564,
+    "lon": -70.671
+  },
+  {
+    "codigoSii": "13106",
+    "nombre": "Estación Central",
+    "nombreApi": "ESTACION CENTRAL",
+    "tgrRegion": "13",
+    "tgrComuna": "328",
+    "lat": -33.45,
+    "lon": -70.675
+  },
+  {
+    "codigoSii": "13107",
+    "nombre": "Huechuraba",
+    "nombreApi": "HUECHURABA",
+    "tgrRegion": "13",
+    "tgrComuna": "334",
+    "lat": -33.367,
+    "lon": -70.632
+  },
+  {
+    "codigoSii": "13108",
+    "nombre": "Independencia",
+    "nombreApi": "INDEPENDENCIA",
+    "tgrRegion": "13",
+    "tgrComuna": "330",
+    "lat": -33.42,
+    "lon": -70.663
+  },
+  {
+    "codigoSii": "13109",
+    "nombre": "La Cisterna",
+    "nombreApi": "LA CISTERNA",
+    "tgrRegion": "13",
+    "tgrComuna": "96",
+    "lat": -33.538,
+    "lon": -70.661
+  },
+  {
+    "codigoSii": "13110",
+    "nombre": "La Florida",
+    "nombreApi": "LA FLORIDA",
+    "tgrRegion": "13",
+    "tgrComuna": "93",
+    "lat": -33.523,
+    "lon": -70.595
+  },
+  {
+    "codigoSii": "13111",
+    "nombre": "La Granja",
+    "nombreApi": "LA GRANJA",
+    "tgrRegion": "13",
+    "tgrComuna": "97",
+    "lat": -33.537,
+    "lon": -70.619
+  },
+  {
+    "codigoSii": "13112",
+    "nombre": "La Pintana",
+    "nombreApi": "LA PINTANA",
+    "tgrRegion": "13",
+    "tgrComuna": "327",
+    "lat": -33.59,
+    "lon": -70.632
+  },
+  {
+    "codigoSii": "13113",
+    "nombre": "La Reina",
+    "nombreApi": "LA REINA",
+    "tgrRegion": "13",
+    "tgrComuna": "92",
+    "lat": -33.457,
+    "lon": -70.535
+  },
+  {
+    "codigoSii": "13114",
+    "nombre": "Las Condes",
+    "nombreApi": "LAS CONDES",
+    "tgrRegion": "13",
+    "tgrComuna": "71",
+    "lat": -33.415,
+    "lon": -70.584
+  },
+  {
+    "codigoSii": "13115",
+    "nombre": "Lo Barnechea",
+    "nombreApi": "LO BARNECHEA",
+    "tgrRegion": "13",
+    "tgrComuna": "332",
+    "lat": -33.299,
+    "lon": -70.375
+  },
+  {
+    "codigoSii": "13116",
+    "nombre": "Lo Espejo",
+    "nombreApi": "LO ESPEJO",
+    "tgrRegion": "13",
+    "tgrComuna": "337",
+    "lat": -33.525,
+    "lon": -70.692
+  },
+  {
+    "codigoSii": "13117",
+    "nombre": "Lo Prado",
+    "nombreApi": "LO PRADO",
+    "tgrRegion": "13",
+    "tgrComuna": "325",
+    "lat": -33.449,
+    "lon": -70.721
+  },
+  {
+    "codigoSii": "13118",
+    "nombre": "Macul",
+    "nombreApi": "MACUL",
+    "tgrRegion": "13",
+    "tgrComuna": "323",
+    "lat": -33.492,
+    "lon": -70.597
+  },
+  {
+    "codigoSii": "13119",
+    "nombre": "Maipú",
+    "nombreApi": "MAIPU",
+    "tgrRegion": "13",
+    "tgrComuna": "94",
+    "lat": -33.521,
+    "lon": -70.757
+  },
+  {
+    "codigoSii": "13120",
+    "nombre": "Ñuñoa",
+    "nombreApi": "NUNOA",
+    "tgrRegion": "13",
+    "tgrComuna": "91",
+    "lat": -33.461,
+    "lon": -70.593
+  },
+  {
+    "codigoSii": "13121",
+    "nombre": "Pedro Aguirre Cerda",
+    "nombreApi": "PEDRO AGUIRRE CERDA",
+    "tgrRegion": "13",
+    "tgrComuna": "336",
+    "lat": -33.489,
+    "lon": -70.673
+  },
+  {
+    "codigoSii": "13122",
+    "nombre": "Peñalolén",
+    "nombreApi": "PENALOLEN",
+    "tgrRegion": "13",
+    "tgrComuna": "322",
+    "lat": -33.49,
+    "lon": -70.511
+  },
+  {
+    "codigoSii": "13123",
+    "nombre": "Providencia",
+    "nombreApi": "PROVIDENCIA",
+    "tgrRegion": "13",
+    "tgrComuna": "72",
+    "lat": -33.421,
+    "lon": -70.603
+  },
+  {
+    "codigoSii": "13124",
+    "nombre": "Pudahuel",
+    "nombreApi": "PUDAHUEL",
+    "tgrRegion": "13",
+    "tgrComuna": "82",
+    "lat": -33.418,
+    "lon": -70.832
+  },
+  {
+    "codigoSii": "13125",
+    "nombre": "Quilicura",
+    "nombreApi": "QUILICURA",
+    "tgrRegion": "13",
+    "tgrComuna": "79",
+    "lat": -33.355,
+    "lon": -70.728
+  },
+  {
+    "codigoSii": "13126",
+    "nombre": "Quinta Normal",
+    "nombreApi": "QUINTA NORMAL",
+    "tgrRegion": "13",
+    "tgrComuna": "81",
+    "lat": -33.428,
+    "lon": -70.696
+  },
+  {
+    "codigoSii": "13127",
+    "nombre": "Recoleta",
+    "nombreApi": "RECOLETA",
+    "tgrRegion": "13",
+    "tgrComuna": "329",
+    "lat": -33.417,
+    "lon": -70.63
+  },
+  {
+    "codigoSii": "13128",
+    "nombre": "Renca",
+    "nombreApi": "RENCA",
+    "tgrRegion": "13",
+    "tgrComuna": "77",
+    "lat": -33.414,
+    "lon": -70.713
+  },
+  {
+    "codigoSii": "13129",
+    "nombre": "San Joaquín",
+    "nombreApi": "SAN JOAQUIN",
+    "tgrRegion": "13",
+    "tgrComuna": "335",
+    "lat": -33.496,
+    "lon": -70.625
+  },
+  {
+    "codigoSii": "13130",
+    "nombre": "San Miguel",
+    "nombreApi": "SAN MIGUEL",
+    "tgrRegion": "13",
+    "tgrComuna": "95",
+    "lat": -33.502,
+    "lon": -70.649
+  },
+  {
+    "codigoSii": "13131",
+    "nombre": "San Ramón",
+    "nombreApi": "SAN RAMON",
+    "tgrRegion": "13",
+    "tgrComuna": "326",
+    "lat": -33.535,
+    "lon": -70.639
+  },
+  {
+    "codigoSii": "13132",
+    "nombre": "Vitacura",
+    "nombreApi": "VITACURA",
+    "tgrRegion": "13",
+    "tgrComuna": "331",
+    "lat": -33.386,
+    "lon": -70.57
+  },
+  {
+    "codigoSii": "13201",
+    "nombre": "Puente Alto",
+    "nombreApi": "PUENTE ALTO",
+    "tgrRegion": "13",
+    "tgrComuna": "100",
+    "lat": -33.608,
+    "lon": -70.578
+  },
+  {
+    "codigoSii": "13202",
+    "nombre": "Pirque",
+    "nombreApi": "PIRQUE",
+    "tgrRegion": "13",
+    "tgrComuna": "101",
+    "lat": -33.738,
+    "lon": -70.491
+  },
+  {
+    "codigoSii": "13203",
+    "nombre": "San José de Maipo",
+    "nombreApi": "SAN JOSE DE MAIPO",
+    "tgrRegion": "13",
+    "tgrComuna": "102",
+    "lat": -33.692,
+    "lon": -70.133
+  },
+  {
+    "codigoSii": "13301",
+    "nombre": "Colina",
+    "nombreApi": "COLINA",
+    "tgrRegion": "13",
+    "tgrComuna": "76",
+    "lat": -33.2,
+    "lon": -70.67
+  },
+  {
+    "codigoSii": "13302",
+    "nombre": "Lampa",
+    "nombreApi": "LAMPA",
+    "tgrRegion": "13",
+    "tgrComuna": "78",
+    "lat": -33.286,
+    "lon": -70.879
+  },
+  {
+    "codigoSii": "13303",
+    "nombre": "Tiltil",
+    "nombreApi": "TIL-TIL",
+    "tgrRegion": "13",
+    "tgrComuna": "80",
+    "lat": -33.066,
+    "lon": -70.847
+  },
+  {
+    "codigoSii": "13401",
+    "nombre": "San Bernardo",
+    "nombreApi": "SAN BERNARDO",
+    "tgrRegion": "13",
+    "tgrComuna": "98",
+    "lat": -33.591,
+    "lon": -70.702
+  },
+  {
+    "codigoSii": "13402",
+    "nombre": "Buin",
+    "nombreApi": "BUIN",
+    "tgrRegion": "13",
+    "tgrComuna": "103",
+    "lat": -33.754,
+    "lon": -70.716
+  },
+  {
+    "codigoSii": "13403",
+    "nombre": "Calera de Tango",
+    "nombreApi": "CALERA DE TANGO",
+    "tgrRegion": "13",
+    "tgrComuna": "99",
+    "lat": -33.633,
+    "lon": -70.782
+  },
+  {
+    "codigoSii": "13404",
+    "nombre": "Paine",
+    "nombreApi": "PAINE",
+    "tgrRegion": "13",
+    "tgrComuna": "104",
+    "lat": -33.867,
+    "lon": -70.73
+  },
+  {
+    "codigoSii": "13501",
+    "nombre": "Melipilla",
+    "nombreApi": "MELIPILLA",
+    "tgrRegion": "13",
+    "tgrComuna": "88",
+    "lat": -33.687,
+    "lon": -71.214
+  },
+  {
+    "codigoSii": "13502",
+    "nombre": "Alhué",
+    "nombreApi": "ALHUE",
+    "tgrRegion": "13",
+    "tgrComuna": "109",
+    "lat": -34.036,
+    "lon": -71.028
+  },
+  {
+    "codigoSii": "13503",
+    "nombre": "Curacaví",
+    "nombreApi": "CURACAVI",
+    "tgrRegion": "13",
+    "tgrComuna": "83",
+    "lat": -33.406,
+    "lon": -71.133
+  },
+  {
+    "codigoSii": "13504",
+    "nombre": "María Pinto",
+    "nombreApi": "MARIA PINTO",
+    "tgrRegion": "13",
+    "tgrComuna": "90",
+    "lat": -33.515,
+    "lon": -71.119
+  },
+  {
+    "codigoSii": "13505",
+    "nombre": "San Pedro",
+    "nombreApi": "SAN PEDRO",
+    "tgrRegion": "13",
+    "tgrComuna": "108",
+    "lat": -33.878,
+    "lon": -71.461
+  },
+  {
+    "codigoSii": "13601",
+    "nombre": "Talagante",
+    "nombreApi": "TALAGANTE",
+    "tgrRegion": "13",
+    "tgrComuna": "86",
+    "lat": -33.664,
+    "lon": -70.93
+  },
+  {
+    "codigoSii": "13602",
+    "nombre": "El Monte",
+    "nombreApi": "EL MONTE",
+    "tgrRegion": "13",
+    "tgrComuna": "89",
+    "lat": -33.666,
+    "lon": -71.029
+  },
+  {
+    "codigoSii": "13603",
+    "nombre": "Isla de Maipo",
+    "nombreApi": "ISLA DE MAIPO",
+    "tgrRegion": "13",
+    "tgrComuna": "87",
+    "lat": -33.754,
+    "lon": -70.886
+  },
+  {
+    "codigoSii": "13604",
+    "nombre": "Padre Hurtado",
+    "nombreApi": "PADRE HURTADO",
+    "tgrRegion": "13",
+    "tgrComuna": "339",
+    "lat": -33.576,
+    "lon": -70.8
+  },
+  {
+    "codigoSii": "13605",
+    "nombre": "Peñaflor",
+    "nombreApi": "PENAFLOR",
+    "tgrRegion": "13",
+    "tgrComuna": "85",
+    "lat": -33.614,
+    "lon": -70.888
+  },
+  {
+    "codigoSii": "6101",
+    "nombre": "Rancagua",
+    "nombreApi": "RANCAGUA",
+    "tgrRegion": "6",
+    "tgrComuna": "105",
+    "lat": -34.162,
+    "lon": -70.741
+  },
+  {
+    "codigoSii": "6102",
+    "nombre": "Codegua",
+    "nombreApi": "CODEGUA",
+    "tgrRegion": "6",
+    "tgrComuna": "110",
+    "lat": -34.044,
+    "lon": -70.513
+  },
+  {
+    "codigoSii": "6103",
+    "nombre": "Coinco",
+    "nombreApi": "COINCO",
+    "tgrRegion": "6",
+    "tgrComuna": "114",
+    "lat": -34.292,
+    "lon": -70.971
+  },
+  {
+    "codigoSii": "6104",
+    "nombre": "Coltauco",
+    "nombreApi": "COLTAUCO",
+    "tgrRegion": "6",
+    "tgrComuna": "113",
+    "lat": -34.25,
+    "lon": -71.079
+  },
+  {
+    "codigoSii": "6105",
+    "nombre": "Donihue",
+    "nombreApi": "DONIHUE",
+    "tgrRegion": "6",
+    "tgrComuna": "112",
+    "lat": -34.202,
+    "lon": -70.933
+  },
+  {
+    "codigoSii": "6106",
+    "nombre": "Graneros",
+    "nombreApi": "GRANEROS",
+    "tgrRegion": "6",
+    "tgrComuna": "107",
+    "lat": -34.071,
+    "lon": -70.75
+  },
+  {
+    "codigoSii": "6107",
+    "nombre": "Las Cabras",
+    "nombreApi": "LAS CABRAS",
+    "tgrRegion": "6",
+    "tgrComuna": "116",
+    "lat": -34.295,
+    "lon": -71.307
+  },
+  {
+    "codigoSii": "6108",
+    "nombre": "Machalí",
+    "nombreApi": "MACHALI",
+    "tgrRegion": "6",
+    "tgrComuna": "106",
+    "lat": -34.294,
+    "lon": -70.337
+  },
+  {
+    "codigoSii": "6109",
+    "nombre": "Malloa",
+    "nombreApi": "MALLOA",
+    "tgrRegion": "6",
+    "tgrComuna": "122",
+    "lat": -34.446,
+    "lon": -70.945
+  },
+  {
+    "codigoSii": "6110",
+    "nombre": "Mostazal",
+    "nombreApi": "SAN FCO MOSTAZAL",
+    "tgrRegion": "6",
+    "tgrComuna": "111",
+    "lat": -33.977,
+    "lon": -70.709
+  },
+  {
+    "codigoSii": "6111",
+    "nombre": "Olivar",
+    "nombreApi": "OLIVAR",
+    "tgrRegion": "6",
+    "tgrComuna": "120",
+    "lat": -34.219,
+    "lon": -70.836
+  },
+  {
+    "codigoSii": "6112",
+    "nombre": "Peumo",
+    "nombreApi": "PEUMO",
+    "tgrRegion": "6",
+    "tgrComuna": "115",
+    "lat": -34.38,
+    "lon": -71.169
+  },
+  {
+    "codigoSii": "6113",
+    "nombre": "Pichidegua",
+    "nombreApi": "PICHIDEGUA",
+    "tgrRegion": "6",
+    "tgrComuna": "118",
+    "lat": -34.376,
+    "lon": -71.347
+  },
+  {
+    "codigoSii": "6114",
+    "nombre": "Quinta de Tilcoco",
+    "nombreApi": "QUINTA DE TILCOCO",
+    "tgrRegion": "6",
+    "tgrComuna": "123",
+    "lat": -34.367,
+    "lon": -71.01
+  },
+  {
+    "codigoSii": "6115",
+    "nombre": "Rengo",
+    "nombreApi": "RENGO",
+    "tgrRegion": "6",
+    "tgrComuna": "121",
+    "lat": -34.402,
+    "lon": -70.856
+  },
+  {
+    "codigoSii": "6116",
+    "nombre": "Requínoa",
+    "nombreApi": "REQUINOA",
+    "tgrRegion": "6",
+    "tgrComuna": "119",
+    "lat": -34.353,
+    "lon": -70.68
+  },
+  {
+    "codigoSii": "6117",
+    "nombre": "San Vicente",
+    "nombreApi": "SAN VICENTE",
+    "tgrRegion": "6",
+    "tgrComuna": "117",
+    "lat": -34.438,
+    "lon": -71.079
+  },
+  {
+    "codigoSii": "6201",
+    "nombre": "Pichilemu",
+    "nombreApi": "PICHILEMU",
+    "tgrRegion": "6",
+    "tgrComuna": "137",
+    "lat": -34.387,
+    "lon": -72.003
+  },
+  {
+    "codigoSii": "6202",
+    "nombre": "La Estrella",
+    "nombreApi": "LA ESTRELLA",
+    "tgrRegion": "6",
+    "tgrComuna": "139",
+    "lat": -34.204,
+    "lon": -71.607
+  },
+  {
+    "codigoSii": "6203",
+    "nombre": "Litueche",
+    "nombreApi": "LITUECHE",
+    "tgrRegion": "6",
+    "tgrComuna": "136",
+    "lat": -34.107,
+    "lon": -71.72
+  },
+  {
+    "codigoSii": "6204",
+    "nombre": "Marchihue",
+    "nombreApi": "MARCHIGUE",
+    "tgrRegion": "6",
+    "tgrComuna": "134",
+    "lat": -34.398,
+    "lon": -71.614
+  },
+  {
+    "codigoSii": "6205",
+    "nombre": "Navidad",
+    "nombreApi": "NAVIDAD",
+    "tgrRegion": "6",
+    "tgrComuna": "138",
+    "lat": -34.007,
+    "lon": -71.81
+  },
+  {
+    "codigoSii": "6206",
+    "nombre": "Paredones",
+    "nombreApi": "PAREDONES",
+    "tgrRegion": "6",
+    "tgrComuna": "133",
+    "lat": -34.697,
+    "lon": -71.898
+  },
+  {
+    "codigoSii": "6301",
+    "nombre": "San Fernando",
+    "nombreApi": "SAN FERNANDO",
+    "tgrRegion": "6",
+    "tgrComuna": "124",
+    "lat": -34.584,
+    "lon": -70.987
+  },
+  {
+    "codigoSii": "6302",
+    "nombre": "Chépica",
+    "nombreApi": "CHEPICA",
+    "tgrRegion": "6",
+    "tgrComuna": "132",
+    "lat": -34.73,
+    "lon": -71.269
+  },
+  {
+    "codigoSii": "6303",
+    "nombre": "Chimbarongo",
+    "nombreApi": "CHIMBARONGO",
+    "tgrRegion": "6",
+    "tgrComuna": "125",
+    "lat": -34.755,
+    "lon": -70.975
+  },
+  {
+    "codigoSii": "6304",
+    "nombre": "Lolol",
+    "nombreApi": "LOLOL",
+    "tgrRegion": "6",
+    "tgrComuna": "129",
+    "lat": -34.769,
+    "lon": -71.645
+  },
+  {
+    "codigoSii": "6305",
+    "nombre": "Nancagua",
+    "nombreApi": "NANCAGUA",
+    "tgrRegion": "6",
+    "tgrComuna": "126",
+    "lat": -34.662,
+    "lon": -71.175
+  },
+  {
+    "codigoSii": "6306",
+    "nombre": "Palmilla",
+    "nombreApi": "PALMILLA",
+    "tgrRegion": "6",
+    "tgrComuna": "130",
+    "lat": -34.604,
+    "lon": -71.358
+  },
+  {
+    "codigoSii": "6307",
+    "nombre": "Peralillo",
+    "nombreApi": "PERALILLO",
+    "tgrRegion": "6",
+    "tgrComuna": "131",
+    "lat": -34.459,
+    "lon": -71.5
+  },
+  {
+    "codigoSii": "6308",
+    "nombre": "Placilla",
+    "nombreApi": "PLACILLA",
+    "tgrRegion": "6",
+    "tgrComuna": "127",
+    "lat": -34.614,
+    "lon": -71.095
+  },
+  {
+    "codigoSii": "6309",
+    "nombre": "Pumanque",
+    "nombreApi": "PUMANQUE",
+    "tgrRegion": "6",
+    "tgrComuna": "135",
+    "lat": -34.605,
+    "lon": -71.644
+  },
+  {
+    "codigoSii": "6310",
+    "nombre": "Santa Cruz",
+    "nombreApi": "SANTA CRUZ",
+    "tgrRegion": "6",
+    "tgrComuna": "128",
+    "lat": -34.638,
+    "lon": -71.367
+  },
+  {
+    "codigoSii": "7101",
+    "nombre": "Curicó",
+    "nombreApi": "CURICO",
+    "tgrRegion": "7",
+    "tgrComuna": "140",
+    "lat": -34.976,
+    "lon": -71.224
+  },
+  {
+    "codigoSii": "7102",
+    "nombre": "Hualañé",
+    "nombreApi": "HUALANE",
+    "tgrRegion": "7",
+    "tgrComuna": "144",
+    "lat": -34.976,
+    "lon": -71.804
+  },
+  {
+    "codigoSii": "7103",
+    "nombre": "Licantén",
+    "nombreApi": "LICANTEN",
+    "tgrRegion": "7",
+    "tgrComuna": "145",
+    "lat": -34.959,
+    "lon": -72.027
+  },
+  {
+    "codigoSii": "7104",
+    "nombre": "Molina",
+    "nombreApi": "MOLINA",
+    "tgrRegion": "7",
+    "tgrComuna": "147",
+    "lat": -35.09,
+    "lon": -71.279
+  },
+  {
+    "codigoSii": "7105",
+    "nombre": "Rauco",
+    "nombreApi": "RAUCO",
+    "tgrRegion": "7",
+    "tgrComuna": "143",
+    "lat": -34.93,
+    "lon": -71.311
+  },
+  {
+    "codigoSii": "7106",
+    "nombre": "Romeral",
+    "nombreApi": "ROMERAL",
+    "tgrRegion": "7",
+    "tgrComuna": "141",
+    "lat": -34.963,
+    "lon": -71.121
+  },
+  {
+    "codigoSii": "7107",
+    "nombre": "Sagrada Familia",
+    "nombreApi": "SAGRADA FAMILIA",
+    "tgrRegion": "7",
+    "tgrComuna": "148",
+    "lat": -34.995,
+    "lon": -71.38
+  },
+  {
+    "codigoSii": "7108",
+    "nombre": "Teno",
+    "nombreApi": "TENO",
+    "tgrRegion": "7",
+    "tgrComuna": "142",
+    "lat": -34.87,
+    "lon": -71.09
+  },
+  {
+    "codigoSii": "7109",
+    "nombre": "Vichuquén",
+    "nombreApi": "VICHUQUEN",
+    "tgrRegion": "7",
+    "tgrComuna": "146",
+    "lat": -34.859,
+    "lon": -72.007
+  },
+  {
+    "codigoSii": "7201",
+    "nombre": "Talca",
+    "nombreApi": "TALCA",
+    "tgrRegion": "7",
+    "tgrComuna": "150",
+    "lat": -35.429,
+    "lon": -71.661
+  },
+  {
+    "codigoSii": "7202",
+    "nombre": "Constitución",
+    "nombreApi": "CONSTITUCION",
+    "tgrRegion": "7",
+    "tgrComuna": "157",
+    "lat": -35.331,
+    "lon": -72.414
+  },
+  {
+    "codigoSii": "7203",
+    "nombre": "Curepto",
+    "nombreApi": "CUREPTO",
+    "tgrRegion": "7",
+    "tgrComuna": "155",
+    "lat": -35.091,
+    "lon": -72.022
+  },
+  {
+    "codigoSii": "7204",
+    "nombre": "Empedrado",
+    "nombreApi": "EMPEDRADO",
+    "tgrRegion": "7",
+    "tgrComuna": "158",
+    "lat": -35.621,
+    "lon": -72.247
+  },
+  {
+    "codigoSii": "7205",
+    "nombre": "Maule",
+    "nombreApi": "MAULE",
+    "tgrRegion": "7",
+    "tgrComuna": "154",
+    "lat": -35.506,
+    "lon": -71.707
+  },
+  {
+    "codigoSii": "7206",
+    "nombre": "Pelarco",
+    "nombreApi": "PELARCO",
+    "tgrRegion": "7",
+    "tgrComuna": "152",
+    "lat": -35.372,
+    "lon": -71.328
+  },
+  {
+    "codigoSii": "7207",
+    "nombre": "Pencahue",
+    "nombreApi": "PENCAHUE",
+    "tgrRegion": "7",
+    "tgrComuna": "153",
+    "lat": -35.305,
+    "lon": -71.828
+  },
+  {
+    "codigoSii": "7208",
+    "nombre": "Río Claro",
+    "nombreApi": "RIO CLARO",
+    "tgrRegion": "7",
+    "tgrComuna": "149",
+    "lat": -35.283,
+    "lon": -71.267
+  },
+  {
+    "codigoSii": "7209",
+    "nombre": "San Clemente",
+    "nombreApi": "SAN CLEMENTE",
+    "tgrRegion": "7",
+    "tgrComuna": "151",
+    "lat": -35.534,
+    "lon": -71.487
+  },
+  {
+    "codigoSii": "7210",
+    "nombre": "San Rafael",
+    "nombreApi": "SAN RAFAEL",
+    "tgrRegion": "7",
+    "tgrComuna": "341",
+    "lat": -35.294,
+    "lon": -71.525
+  },
+  {
+    "codigoSii": "7301",
+    "nombre": "Linares",
+    "nombreApi": "LINARES",
+    "tgrRegion": "7",
+    "tgrComuna": "159",
+    "lat": -35.85,
+    "lon": -71.585
+  },
+  {
+    "codigoSii": "7302",
+    "nombre": "Colbún",
+    "nombreApi": "COLBUN",
+    "tgrRegion": "7",
+    "tgrComuna": "161",
+    "lat": -35.693,
+    "lon": -71.407
+  },
+  {
+    "codigoSii": "7303",
+    "nombre": "Longaví",
+    "nombreApi": "LONGAVI",
+    "tgrRegion": "7",
+    "tgrComuna": "162",
+    "lat": -35.966,
+    "lon": -71.682
+  },
+  {
+    "codigoSii": "7304",
+    "nombre": "Parral",
+    "nombreApi": "PARRAL",
+    "tgrRegion": "7",
+    "tgrComuna": "164",
+    "lat": -36.14,
+    "lon": -71.824
+  },
+  {
+    "codigoSii": "7305",
+    "nombre": "Retiro",
+    "nombreApi": "RETIRO",
+    "tgrRegion": "7",
+    "tgrComuna": "165",
+    "lat": -36.046,
+    "lon": -71.759
+  },
+  {
+    "codigoSii": "7306",
+    "nombre": "San Javier",
+    "nombreApi": "SAN JAVIER",
+    "tgrRegion": "7",
+    "tgrComuna": "156",
+    "lat": -35.604,
+    "lon": -71.736
+  },
+  {
+    "codigoSii": "7307",
+    "nombre": "Villa Alegre",
+    "nombreApi": "VILLA ALEGRE",
+    "tgrRegion": "7",
+    "tgrComuna": "163",
+    "lat": -35.687,
+    "lon": -71.67
+  },
+  {
+    "codigoSii": "7308",
+    "nombre": "Yerbas Buenas",
+    "nombreApi": "YERBAS BUENAS",
+    "tgrRegion": "7",
+    "tgrComuna": "160",
+    "lat": -35.688,
+    "lon": -71.564
+  },
+  {
+    "codigoSii": "7401",
+    "nombre": "Cauquenes",
+    "nombreApi": "CAUQUENES",
+    "tgrRegion": "7",
+    "tgrComuna": "166",
+    "lat": -35.974,
+    "lon": -72.314
+  },
+  {
+    "codigoSii": "7402",
+    "nombre": "Chanco",
+    "nombreApi": "CHANCO",
+    "tgrRegion": "7",
+    "tgrComuna": "167",
+    "lat": -35.734,
+    "lon": -72.533
+  },
+  {
+    "codigoSii": "7403",
+    "nombre": "Pelluhue",
+    "nombreApi": "PELLUHUE",
+    "tgrRegion": "7",
+    "tgrComuna": "320",
+    "lat": -35.815,
+    "lon": -72.574
+  },
+  {
+    "codigoSii": "8101",
+    "nombre": "Chillán",
+    "nombreApi": "CHILLÁN",
+    "tgrRegion": "16",
+    "tgrComuna": "168",
+    "lat": -36.601,
+    "lon": -72.109
+  },
+  {
+    "codigoSii": "8121",
+    "nombre": "Chillán Viejo",
+    "nombreApi": "CHILLAN VIEJO",
+    "tgrRegion": "16",
+    "tgrComuna": "342",
+    "lat": -36.633,
+    "lon": -72.14
+  },
+  {
+    "codigoSii": "8102",
+    "nombre": "Bulnes",
+    "nombreApi": "BULNES",
+    "tgrRegion": "16",
+    "tgrComuna": "180",
+    "lat": -36.742,
+    "lon": -72.302
+  },
+  {
+    "codigoSii": "8106",
+    "nombre": "El Carmen",
+    "nombreApi": "EL CARMEN",
+    "tgrRegion": "16",
+    "tgrComuna": "185",
+    "lat": -36.896,
+    "lon": -72.022
+  },
+  {
+    "codigoSii": "8109",
+    "nombre": "Pemuco",
+    "nombreApi": "PEMUCO",
+    "tgrRegion": "16",
+    "tgrComuna": "184",
+    "lat": -36.987,
+    "lon": -72.019
+  },
+  {
+    "codigoSii": "8110",
+    "nombre": "Pinto",
+    "nombreApi": "PINTO",
+    "tgrRegion": "16",
+    "tgrComuna": "169",
+    "lat": -36.698,
+    "lon": -71.893
+  },
+  {
+    "codigoSii": "8112",
+    "nombre": "Quillón",
+    "nombreApi": "QUILLON",
+    "tgrRegion": "16",
+    "tgrComuna": "182",
+    "lat": -36.738,
+    "lon": -72.469
+  },
+  {
+    "codigoSii": "8117",
+    "nombre": "San Ignacio",
+    "nombreApi": "SAN IGNACIO",
+    "tgrRegion": "16",
+    "tgrComuna": "181",
+    "lat": -36.819,
+    "lon": -71.988
+  },
+  {
+    "codigoSii": "8120",
+    "nombre": "Yungay",
+    "nombreApi": "YUNGAY",
+    "tgrRegion": "16",
+    "tgrComuna": "183",
+    "lat": -37.122,
+    "lon": -72.019
+  },
+  {
+    "codigoSii": "8103",
+    "nombre": "Cobquecura",
+    "nombreApi": "COBQUECURA",
+    "tgrRegion": "16",
+    "tgrComuna": "175",
+    "lat": -36.132,
+    "lon": -72.791
+  },
+  {
+    "codigoSii": "8104",
+    "nombre": "Coelemu",
+    "nombreApi": "COELEMU",
+    "tgrRegion": "16",
+    "tgrComuna": "186",
+    "lat": -36.488,
+    "lon": -72.702
+  },
+  {
+    "codigoSii": "8107",
+    "nombre": "Ninhue",
+    "nombreApi": "NINHUE",
+    "tgrRegion": "16",
+    "tgrComuna": "174",
+    "lat": -36.401,
+    "lon": -72.397
+  },
+  {
+    "codigoSii": "8111",
+    "nombre": "Portezuelo",
+    "nombreApi": "PORTEZUELO",
+    "tgrRegion": "16",
+    "tgrComuna": "171",
+    "lat": -36.529,
+    "lon": -72.433
+  },
+  {
+    "codigoSii": "8113",
+    "nombre": "Quirihue",
+    "nombreApi": "QUIRIHUE",
+    "tgrRegion": "16",
+    "tgrComuna": "172",
+    "lat": -36.284,
+    "lon": -72.541
+  },
+  {
+    "codigoSii": "8114",
+    "nombre": "Ranquil",
+    "nombreApi": "RANQUIL",
+    "tgrRegion": "16",
+    "tgrComuna": "187",
+    "lat": -36.649,
+    "lon": -72.606
+  },
+  {
+    "codigoSii": "8119",
+    "nombre": "Trehuaco",
+    "nombreApi": "TREHUACO",
+    "tgrRegion": "16",
+    "tgrComuna": "173",
+    "lat": -36.41,
+    "lon": -72.66
+  },
+  {
+    "codigoSii": "8105",
+    "nombre": "Coihueco",
+    "nombreApi": "COIHUECO",
+    "tgrRegion": "16",
+    "tgrComuna": "170",
+    "lat": -36.617,
+    "lon": -71.834
+  },
+  {
+    "codigoSii": "8108",
+    "nombre": "Ñiquén",
+    "nombreApi": "NIQUEN",
+    "tgrRegion": "16",
+    "tgrComuna": "177",
+    "lat": -36.285,
+    "lon": -71.899
+  },
+  {
+    "codigoSii": "8115",
+    "nombre": "San Carlos",
+    "nombreApi": "SAN CARLOS",
+    "tgrRegion": "16",
+    "tgrComuna": "176",
+    "lat": -36.422,
+    "lon": -71.959
+  },
+  {
+    "codigoSii": "8116",
+    "nombre": "San Fabián",
+    "nombreApi": "SAN FABIAN",
+    "tgrRegion": "16",
+    "tgrComuna": "178",
+    "lat": -36.554,
+    "lon": -71.549
+  },
+  {
+    "codigoSii": "8118",
+    "nombre": "San Nicolás",
+    "nombreApi": "SAN NICOLAS",
+    "tgrRegion": "16",
+    "tgrComuna": "179",
+    "lat": -36.5,
+    "lon": -72.213
+  },
+  {
+    "codigoSii": "8201",
+    "nombre": "Lebu",
+    "nombreApi": "LEBU",
+    "tgrRegion": "8",
+    "tgrComuna": "199",
+    "lat": -37.608,
+    "lon": -73.651
+  },
+  {
+    "codigoSii": "8202",
+    "nombre": "Arauco",
+    "nombreApi": "ARAUCO",
+    "tgrRegion": "8",
+    "tgrComuna": "198",
+    "lat": -37.257,
+    "lon": -73.284
+  },
+  {
+    "codigoSii": "8203",
+    "nombre": "Cañete",
+    "nombreApi": "CANETE",
+    "tgrRegion": "8",
+    "tgrComuna": "201",
+    "lat": -37.804,
+    "lon": -73.402
+  },
+  {
+    "codigoSii": "8204",
+    "nombre": "Contulmo",
+    "nombreApi": "CONTULMO",
+    "tgrRegion": "8",
+    "tgrComuna": "202",
+    "lat": -38.026,
+    "lon": -73.258
+  },
+  {
+    "codigoSii": "8205",
+    "nombre": "Curanilahue",
+    "nombreApi": "CURANILAHUE",
+    "tgrRegion": "8",
+    "tgrComuna": "197",
+    "lat": -37.476,
+    "lon": -73.353
+  },
+  {
+    "codigoSii": "8206",
+    "nombre": "Los Álamos",
+    "nombreApi": "LOS ALAMOS",
+    "tgrRegion": "8",
+    "tgrComuna": "200",
+    "lat": -37.675,
+    "lon": -73.39
+  },
+  {
+    "codigoSii": "8207",
+    "nombre": "Tirúa",
+    "nombreApi": "TIRUA",
+    "tgrRegion": "8",
+    "tgrComuna": "203",
+    "lat": -38.332,
+    "lon": -73.379
+  },
+  {
+    "codigoSii": "8301",
+    "nombre": "Concepción",
+    "nombreApi": "CONCEPCION",
+    "tgrRegion": "8",
+    "tgrComuna": "188",
+    "lat": -36.815,
+    "lon": -73.029
+  },
+  {
+    "codigoSii": "8302",
+    "nombre": "Coronel",
+    "nombreApi": "CORONEL",
+    "tgrRegion": "8",
+    "tgrComuna": "194",
+    "lat": -37.027,
+    "lon": -73.15
+  },
+  {
+    "codigoSii": "8303",
+    "nombre": "Chiguayante",
+    "nombreApi": "CHIGUAYANTE",
+    "tgrRegion": "8",
+    "tgrComuna": "344",
+    "lat": -36.905,
+    "lon": -73.016
+  },
+  {
+    "codigoSii": "8304",
+    "nombre": "Florida",
+    "nombreApi": "FLORIDA",
+    "tgrRegion": "8",
+    "tgrComuna": "193",
+    "lat": -36.821,
+    "lon": -72.662
+  },
+  {
+    "codigoSii": "8305",
+    "nombre": "Hualqui",
+    "nombreApi": "HUALQUI",
+    "tgrRegion": "8",
+    "tgrComuna": "192",
+    "lat": -37.015,
+    "lon": -72.866
+  },
+  {
+    "codigoSii": "8306",
+    "nombre": "Lota",
+    "nombreApi": "LOTA",
+    "tgrRegion": "8",
+    "tgrComuna": "195",
+    "lat": -37.091,
+    "lon": -73.155
+  },
+  {
+    "codigoSii": "8307",
+    "nombre": "Penco",
+    "nombreApi": "PENCO",
+    "tgrRegion": "8",
+    "tgrComuna": "191",
+    "lat": -36.742,
+    "lon": -72.998
+  },
+  {
+    "codigoSii": "8308",
+    "nombre": "San Pedro de la Paz",
+    "nombreApi": "SAN PEDRO DE LA PAZ",
+    "tgrRegion": "8",
+    "tgrComuna": "343",
+    "lat": -36.864,
+    "lon": -73.109
+  },
+  {
+    "codigoSii": "8309",
+    "nombre": "Santa Juana",
+    "nombreApi": "SANTA JUANA",
+    "tgrRegion": "8",
+    "tgrComuna": "196",
+    "lat": -37.173,
+    "lon": -72.935
+  },
+  {
+    "codigoSii": "8310",
+    "nombre": "Talcahuano",
+    "nombreApi": "TALCAHUANO",
+    "tgrRegion": "8",
+    "tgrComuna": "189",
+    "lat": -36.736,
+    "lon": -73.105
+  },
+  {
+    "codigoSii": "8311",
+    "nombre": "Tomé",
+    "nombreApi": "TOME",
+    "tgrRegion": "8",
+    "tgrComuna": "190",
+    "lat": -36.618,
+    "lon": -72.958
+  },
+  {
+    "codigoSii": "8312",
+    "nombre": "Hualpén",
+    "nombreApi": "HUALPEN",
+    "tgrRegion": "8",
+    "tgrComuna": "346",
+    "lat": -36.783,
+    "lon": -73.145
+  },
+  {
+    "codigoSii": "8401",
+    "nombre": "Los Ángeles",
+    "nombreApi": "LOS ANGELES",
+    "tgrRegion": "8",
+    "tgrComuna": "204",
+    "lat": -37.473,
+    "lon": -72.351
+  },
+  {
+    "codigoSii": "8402",
+    "nombre": "Antuco",
+    "nombreApi": "ANTUCO",
+    "tgrRegion": "8",
+    "tgrComuna": "303",
+    "lat": -37.327,
+    "lon": -71.678
+  },
+  {
+    "codigoSii": "8403",
+    "nombre": "Cabrero",
+    "nombreApi": "CABRERO",
+    "tgrRegion": "8",
+    "tgrComuna": "208",
+    "lat": -37.037,
+    "lon": -72.406
+  },
+  {
+    "codigoSii": "8404",
+    "nombre": "Laja",
+    "nombreApi": "LAJA",
+    "tgrRegion": "8",
+    "tgrComuna": "210",
+    "lat": -37.277,
+    "lon": -72.717
+  },
+  {
+    "codigoSii": "8405",
+    "nombre": "Mulchén",
+    "nombreApi": "MULCHEN",
+    "tgrRegion": "8",
+    "tgrComuna": "214",
+    "lat": -37.715,
+    "lon": -72.239
+  },
+  {
+    "codigoSii": "8406",
+    "nombre": "Nacimiento",
+    "nombreApi": "NACIMIENTO",
+    "tgrRegion": "8",
+    "tgrComuna": "212",
+    "lat": -37.501,
+    "lon": -72.676
+  },
+  {
+    "codigoSii": "8407",
+    "nombre": "Negrete",
+    "nombreApi": "NEGRETE",
+    "tgrRegion": "8",
+    "tgrComuna": "213",
+    "lat": -37.597,
+    "lon": -72.565
+  },
+  {
+    "codigoSii": "8408",
+    "nombre": "Quilaco",
+    "nombreApi": "QUILACO",
+    "tgrRegion": "8",
+    "tgrComuna": "215",
+    "lat": -37.68,
+    "lon": -72.007
+  },
+  {
+    "codigoSii": "8409",
+    "nombre": "Quilleco",
+    "nombreApi": "QUILLECO",
+    "tgrRegion": "8",
+    "tgrComuna": "206",
+    "lat": -37.434,
+    "lon": -71.876
+  },
+  {
+    "codigoSii": "8410",
+    "nombre": "San Rosendo",
+    "nombreApi": "SAN ROSENDO",
+    "tgrRegion": "8",
+    "tgrComuna": "211",
+    "lat": -37.202,
+    "lon": -72.748
+  },
+  {
+    "codigoSii": "8411",
+    "nombre": "Santa Bárbara",
+    "nombreApi": "SANTA BARBARA",
+    "tgrRegion": "8",
+    "tgrComuna": "205",
+    "lat": -37.663,
+    "lon": -72.018
+  },
+  {
+    "codigoSii": "8412",
+    "nombre": "Tucapel",
+    "nombreApi": "TUCAPEL",
+    "tgrRegion": "8",
+    "tgrComuna": "209",
+    "lat": -37.29,
+    "lon": -71.949
+  },
+  {
+    "codigoSii": "8413",
+    "nombre": "Yumbel",
+    "nombreApi": "YUMBEL",
+    "tgrRegion": "8",
+    "tgrComuna": "207",
+    "lat": -37.096,
+    "lon": -72.556
+  },
+  {
+    "codigoSii": "8414",
+    "nombre": "Alto Biobío",
+    "nombreApi": "ALTO BIO BIO",
+    "tgrRegion": "8",
+    "tgrComuna": "349",
+    "lat": -37.871,
+    "lon": -71.611
+  },
+  {
+    "codigoSii": "9101",
+    "nombre": "Angol",
+    "nombreApi": "ANGOL",
+    "tgrRegion": "9",
+    "tgrComuna": "216",
+    "lat": -37.803,
+    "lon": -72.702
+  },
+  {
+    "codigoSii": "9102",
+    "nombre": "Collipulli",
+    "nombreApi": "COLLIPULLI",
+    "tgrRegion": "9",
+    "tgrComuna": "220",
+    "lat": -37.953,
+    "lon": -72.432
+  },
+  {
+    "codigoSii": "9103",
+    "nombre": "Curacautín",
+    "nombreApi": "CURACAUTIN",
+    "tgrRegion": "9",
+    "tgrComuna": "225",
+    "lat": -38.432,
+    "lon": -71.89
+  },
+  {
+    "codigoSii": "9104",
+    "nombre": "Ercilla",
+    "nombreApi": "ERCILLA",
+    "tgrRegion": "9",
+    "tgrComuna": "221",
+    "lat": -38.059,
+    "lon": -72.358
+  },
+  {
+    "codigoSii": "9105",
+    "nombre": "Lonquimay",
+    "nombreApi": "LONQUIMAY",
+    "tgrRegion": "9",
+    "tgrComuna": "226",
+    "lat": -38.45,
+    "lon": -71.374
+  },
+  {
+    "codigoSii": "9106",
+    "nombre": "Los Sauces",
+    "nombreApi": "LOS SAUCES",
+    "tgrRegion": "9",
+    "tgrComuna": "218",
+    "lat": -37.975,
+    "lon": -72.829
+  },
+  {
+    "codigoSii": "9107",
+    "nombre": "Lumaco",
+    "nombreApi": "LUMACO",
+    "tgrRegion": "9",
+    "tgrComuna": "223",
+    "lat": -38.164,
+    "lon": -72.892
+  },
+  {
+    "codigoSii": "9108",
+    "nombre": "Purén",
+    "nombreApi": "PUREN",
+    "tgrRegion": "9",
+    "tgrComuna": "217",
+    "lat": -38.033,
+    "lon": -73.073
+  },
+  {
+    "codigoSii": "9109",
+    "nombre": "Renaico",
+    "nombreApi": "RENAICO",
+    "tgrRegion": "9",
+    "tgrComuna": "219",
+    "lat": -37.665,
+    "lon": -72.569
+  },
+  {
+    "codigoSii": "9110",
+    "nombre": "Traiguén",
+    "nombreApi": "TRAIGUEN",
+    "tgrRegion": "9",
+    "tgrComuna": "222",
+    "lat": -38.251,
+    "lon": -72.665
+  },
+  {
+    "codigoSii": "9111",
+    "nombre": "Victoria",
+    "nombreApi": "VICTORIA",
+    "tgrRegion": "9",
+    "tgrComuna": "224",
+    "lat": -38.234,
+    "lon": -72.333
+  },
+  {
+    "codigoSii": "9201",
+    "nombre": "Temuco",
+    "nombreApi": "TEMUCO",
+    "tgrRegion": "9",
+    "tgrComuna": "227",
+    "lat": -38.736,
+    "lon": -72.599
+  },
+  {
+    "codigoSii": "9202",
+    "nombre": "Carahue",
+    "nombreApi": "CARAHUE",
+    "tgrRegion": "9",
+    "tgrComuna": "235",
+    "lat": -38.712,
+    "lon": -73.165
+  },
+  {
+    "codigoSii": "9203",
+    "nombre": "Cunco",
+    "nombreApi": "CUNCO",
+    "tgrRegion": "9",
+    "tgrComuna": "230",
+    "lat": -38.931,
+    "lon": -72.026
+  },
+  {
+    "codigoSii": "9204",
+    "nombre": "Curarrehue",
+    "nombreApi": "CURARREHUE",
+    "tgrRegion": "9",
+    "tgrComuna": "305",
+    "lat": -39.359,
+    "lon": -71.588
+  },
+  {
+    "codigoSii": "9205",
+    "nombre": "Freire",
+    "nombreApi": "FREIRE",
+    "tgrRegion": "9",
+    "tgrComuna": "229",
+    "lat": -38.954,
+    "lon": -72.622
+  },
+  {
+    "codigoSii": "9206",
+    "nombre": "Galvarino",
+    "nombreApi": "GALVARINO",
+    "tgrRegion": "9",
+    "tgrComuna": "232",
+    "lat": -38.409,
+    "lon": -72.78
+  },
+  {
+    "codigoSii": "9207",
+    "nombre": "Gorbea",
+    "nombreApi": "GORBEA",
+    "tgrRegion": "9",
+    "tgrComuna": "238",
+    "lat": -39.095,
+    "lon": -72.672
+  },
+  {
+    "codigoSii": "9208",
+    "nombre": "Lautaro",
+    "nombreApi": "LAUTARO",
+    "tgrRegion": "9",
+    "tgrComuna": "231",
+    "lat": -38.529,
+    "lon": -72.427
+  },
+  {
+    "codigoSii": "9209",
+    "nombre": "Loncoche",
+    "nombreApi": "LONCOCHE",
+    "tgrRegion": "9",
+    "tgrComuna": "240",
+    "lat": -39.368,
+    "lon": -72.632
+  },
+  {
+    "codigoSii": "9210",
+    "nombre": "Melipeuco",
+    "nombreApi": "MELIPEUCO",
+    "tgrRegion": "9",
+    "tgrComuna": "304",
+    "lat": -38.843,
+    "lon": -71.687
+  },
+  {
+    "codigoSii": "9211",
+    "nombre": "Nueva Imperial",
+    "nombreApi": "NUEVA IMPERIAL",
+    "tgrRegion": "9",
+    "tgrComuna": "234",
+    "lat": -38.745,
+    "lon": -72.948
+  },
+  {
+    "codigoSii": "9212",
+    "nombre": "Padre las Casas",
+    "nombreApi": "PADRE LAS CASAS",
+    "tgrRegion": "9",
+    "tgrComuna": "345",
+    "lat": -38.766,
+    "lon": -72.593
+  },
+  {
+    "codigoSii": "9213",
+    "nombre": "Perquenco",
+    "nombreApi": "PERQUENCO",
+    "tgrRegion": "9",
+    "tgrComuna": "233",
+    "lat": -38.415,
+    "lon": -72.373
+  },
+  {
+    "codigoSii": "9214",
+    "nombre": "Pitrufquén",
+    "nombreApi": "PITRUFQUEN",
+    "tgrRegion": "9",
+    "tgrComuna": "237",
+    "lat": -38.983,
+    "lon": -72.643
+  },
+  {
+    "codigoSii": "9215",
+    "nombre": "Pucón",
+    "nombreApi": "PUCON",
+    "tgrRegion": "9",
+    "tgrComuna": "242",
+    "lat": -39.282,
+    "lon": -71.955
+  },
+  {
+    "codigoSii": "9216",
+    "nombre": "Saavedra",
+    "nombreApi": "PUERTO SAAVEDRA",
+    "tgrRegion": "9",
+    "tgrComuna": "236",
+    "lat": -38.78,
+    "lon": -73.39
+  },
+  {
+    "codigoSii": "9217",
+    "nombre": "Teodoro Schmidt",
+    "nombreApi": "TEODORO SCHMIDT",
+    "tgrRegion": "9",
+    "tgrComuna": "306",
+    "lat": -38.999,
+    "lon": -73.093
+  },
+  {
+    "codigoSii": "9218",
+    "nombre": "Toltén",
+    "nombreApi": "TOLTEN",
+    "tgrRegion": "9",
+    "tgrComuna": "239",
+    "lat": -39.202,
+    "lon": -73.2
+  },
+  {
+    "codigoSii": "9219",
+    "nombre": "Vilcún",
+    "nombreApi": "VILCUN",
+    "tgrRegion": "9",
+    "tgrComuna": "228",
+    "lat": -38.67,
+    "lon": -72.27
+  },
+  {
+    "codigoSii": "9220",
+    "nombre": "Villarrica",
+    "nombreApi": "VILLARRICA",
+    "tgrRegion": "9",
+    "tgrComuna": "241",
+    "lat": -39.28,
+    "lon": -72.218
+  },
+  {
+    "codigoSii": "9221",
+    "nombre": "Cholchol",
+    "nombreApi": "CHOLCHOL",
+    "tgrRegion": "9",
+    "tgrComuna": "348",
+    "lat": -38.596,
+    "lon": -72.845
+  },
+  {
+    "codigoSii": "14101",
+    "nombre": "Valdivia",
+    "nombreApi": "VALDIVIA",
+    "tgrRegion": "14",
+    "tgrComuna": "243",
+    "lat": -39.82,
+    "lon": -73.246
+  },
+  {
+    "codigoSii": "14102",
+    "nombre": "Corral",
+    "nombreApi": "CORRAL",
+    "tgrRegion": "14",
+    "tgrComuna": "244",
+    "lat": -39.889,
+    "lon": -73.433
+  },
+  {
+    "codigoSii": "14103",
+    "nombre": "Lanco",
+    "nombreApi": "LANCO",
+    "tgrRegion": "14",
+    "tgrComuna": "249",
+    "lat": -39.452,
+    "lon": -72.775
+  },
+  {
+    "codigoSii": "14104",
+    "nombre": "Los Lagos",
+    "nombreApi": "LOS LAGOS",
+    "tgrRegion": "14",
+    "tgrComuna": "247",
+    "lat": -39.864,
+    "lon": -72.812
+  },
+  {
+    "codigoSii": "14105",
+    "nombre": "Máfil",
+    "nombreApi": "MAFIL",
+    "tgrRegion": "14",
+    "tgrComuna": "246",
+    "lat": -39.665,
+    "lon": -72.958
+  },
+  {
+    "codigoSii": "14106",
+    "nombre": "Mariquina",
+    "nombreApi": "MARIQUINA",
+    "tgrRegion": "14",
+    "tgrComuna": "245",
+    "lat": -39.54,
+    "lon": -72.962
+  },
+  {
+    "codigoSii": "14107",
+    "nombre": "Paillaco",
+    "nombreApi": "PAILLACO",
+    "tgrRegion": "14",
+    "tgrComuna": "252",
+    "lat": -40.071,
+    "lon": -72.871
+  },
+  {
+    "codigoSii": "14108",
+    "nombre": "Panguipulli",
+    "nombreApi": "PANGUIPULLI",
+    "tgrRegion": "14",
+    "tgrComuna": "250",
+    "lat": -39.644,
+    "lon": -72.337
+  },
+  {
+    "codigoSii": "14201",
+    "nombre": "La Unión",
+    "nombreApi": "LA UNION",
+    "tgrRegion": "14",
+    "tgrComuna": "251",
+    "lat": -40.295,
+    "lon": -73.083
+  },
+  {
+    "codigoSii": "14202",
+    "nombre": "Futrono",
+    "nombreApi": "FUTRONO",
+    "tgrRegion": "14",
+    "tgrComuna": "248",
+    "lat": -40.124,
+    "lon": -72.393
+  },
+  {
+    "codigoSii": "14203",
+    "nombre": "Lago Ranco",
+    "nombreApi": "LAGO RANCO",
+    "tgrRegion": "14",
+    "tgrComuna": "254",
+    "lat": -40.312,
+    "lon": -72.5
+  },
+  {
+    "codigoSii": "14204",
+    "nombre": "Río Bueno",
+    "nombreApi": "RIO BUENO",
+    "tgrRegion": "14",
+    "tgrComuna": "253",
+    "lat": -40.333,
+    "lon": -72.951
+  },
+  {
+    "codigoSii": "10101",
+    "nombre": "Puerto Montt",
+    "nombreApi": "PUERTO MONTT",
+    "tgrRegion": "10",
+    "tgrComuna": "261",
+    "lat": -41.463,
+    "lon": -72.931
+  },
+  {
+    "codigoSii": "10102",
+    "nombre": "Calbuco",
+    "nombreApi": "CALBUCO",
+    "tgrRegion": "10",
+    "tgrComuna": "265",
+    "lat": -41.778,
+    "lon": -73.142
+  },
+  {
+    "codigoSii": "10103",
+    "nombre": "Cochamó",
+    "nombreApi": "COCHAMO",
+    "tgrRegion": "10",
+    "tgrComuna": "262",
+    "lat": -41.488,
+    "lon": -72.304
+  },
+  {
+    "codigoSii": "10104",
+    "nombre": "Fresia",
+    "nombreApi": "FRESIA",
+    "tgrRegion": "10",
+    "tgrComuna": "268",
+    "lat": -41.154,
+    "lon": -73.422
+  },
+  {
+    "codigoSii": "10105",
+    "nombre": "Frutillar",
+    "nombreApi": "FRUTILLAR",
+    "tgrRegion": "10",
+    "tgrComuna": "269",
+    "lat": -41.117,
+    "lon": -73.05
+  },
+  {
+    "codigoSii": "10106",
+    "nombre": "Los Muermos",
+    "nombreApi": "LOS MUERMOS",
+    "tgrRegion": "10",
+    "tgrComuna": "264",
+    "lat": -41.4,
+    "lon": -73.465
+  },
+  {
+    "codigoSii": "10107",
+    "nombre": "Llanquihue",
+    "nombreApi": "LLANQUIHUE",
+    "tgrRegion": "10",
+    "tgrComuna": "267",
+    "lat": -41.257,
+    "lon": -73.005
+  },
+  {
+    "codigoSii": "10108",
+    "nombre": "Maullín",
+    "nombreApi": "MAULLIN",
+    "tgrRegion": "10",
+    "tgrComuna": "263",
+    "lat": -41.617,
+    "lon": -73.596
+  },
+  {
+    "codigoSii": "10109",
+    "nombre": "Puerto Varas",
+    "nombreApi": "PUERTO VARAS",
+    "tgrRegion": "10",
+    "tgrComuna": "266",
+    "lat": -41.316,
+    "lon": -72.984
+  },
+  {
+    "codigoSii": "10201",
+    "nombre": "Castro",
+    "nombreApi": "CASTRO",
+    "tgrRegion": "10",
+    "tgrComuna": "270",
+    "lat": -42.48,
+    "lon": -73.763
+  },
+  {
+    "codigoSii": "10202",
+    "nombre": "Ancud",
+    "nombreApi": "ANCUD",
+    "tgrRegion": "10",
+    "tgrComuna": "277",
+    "lat": -41.866,
+    "lon": -73.834
+  },
+  {
+    "codigoSii": "10203",
+    "nombre": "Chonchi",
+    "nombreApi": "CHONCHI",
+    "tgrRegion": "10",
+    "tgrComuna": "271",
+    "lat": -42.623,
+    "lon": -73.774
+  },
+  {
+    "codigoSii": "10204",
+    "nombre": "Curaco de Vélez",
+    "nombreApi": "CURACO DE VELEZ",
+    "tgrRegion": "10",
+    "tgrComuna": "276",
+    "lat": -42.44,
+    "lon": -73.604
+  },
+  {
+    "codigoSii": "10205",
+    "nombre": "Dalcahue",
+    "nombreApi": "DALCAHUE",
+    "tgrRegion": "10",
+    "tgrComuna": "279",
+    "lat": -42.378,
+    "lon": -73.652
+  },
+  {
+    "codigoSii": "10206",
+    "nombre": "Puqueldón",
+    "nombreApi": "PUQUELDON",
+    "tgrRegion": "10",
+    "tgrComuna": "274",
+    "lat": -42.602,
+    "lon": -73.671
+  },
+  {
+    "codigoSii": "10207",
+    "nombre": "Queilén",
+    "nombreApi": "QUEILEN",
+    "tgrRegion": "10",
+    "tgrComuna": "272",
+    "lat": -42.9,
+    "lon": -73.483
+  },
+  {
+    "codigoSii": "10208",
+    "nombre": "Quellón",
+    "nombreApi": "QUELLON",
+    "tgrRegion": "10",
+    "tgrComuna": "273",
+    "lat": -43.116,
+    "lon": -73.617
+  },
+  {
+    "codigoSii": "10209",
+    "nombre": "Quemchi",
+    "nombreApi": "QUEMCHI",
+    "tgrRegion": "10",
+    "tgrComuna": "278",
+    "lat": -42.143,
+    "lon": -73.475
+  },
+  {
+    "codigoSii": "10210",
+    "nombre": "Quinchao",
+    "nombreApi": "QUINCHAO",
+    "tgrRegion": "10",
+    "tgrComuna": "275",
+    "lat": -42.472,
+    "lon": -73.49
+  },
+  {
+    "codigoSii": "10301",
+    "nombre": "Osorno",
+    "nombreApi": "OSORNO",
+    "tgrRegion": "10",
+    "tgrComuna": "255",
+    "lat": -40.575,
+    "lon": -73.132
+  },
+  {
+    "codigoSii": "10302",
+    "nombre": "Puerto Octay",
+    "nombreApi": "PUERTO OCTAY",
+    "tgrRegion": "10",
+    "tgrComuna": "258",
+    "lat": -40.976,
+    "lon": -72.883
+  },
+  {
+    "codigoSii": "10303",
+    "nombre": "Purranque",
+    "nombreApi": "PURRANQUE",
+    "tgrRegion": "10",
+    "tgrComuna": "260",
+    "lat": -40.909,
+    "lon": -73.165
+  },
+  {
+    "codigoSii": "10304",
+    "nombre": "Puyehue",
+    "nombreApi": "PUYEHUE",
+    "tgrRegion": "10",
+    "tgrComuna": "256",
+    "lat": -40.681,
+    "lon": -72.599
+  },
+  {
+    "codigoSii": "10305",
+    "nombre": "Río Negro",
+    "nombreApi": "RIO NEGRO",
+    "tgrRegion": "10",
+    "tgrComuna": "259",
+    "lat": -40.783,
+    "lon": -73.232
+  },
+  {
+    "codigoSii": "10306",
+    "nombre": "San Juan de la Costa",
+    "nombreApi": "SAN JUAN DE LA COSTA",
+    "tgrRegion": "10",
+    "tgrComuna": "307",
+    "lat": -40.516,
+    "lon": -73.4
+  },
+  {
+    "codigoSii": "10307",
+    "nombre": "San Pablo",
+    "nombreApi": "SAN PABLO",
+    "tgrRegion": "10",
+    "tgrComuna": "257",
+    "lat": -40.412,
+    "lon": -73.01
+  },
+  {
+    "codigoSii": "10401",
+    "nombre": "Chaitén",
+    "nombreApi": "CHAITEN",
+    "tgrRegion": "10",
+    "tgrComuna": "280",
+    "lat": -42.917,
+    "lon": -72.716
+  },
+  {
+    "codigoSii": "10402",
+    "nombre": "Futaleufú",
+    "nombreApi": "FUTALEUFU",
+    "tgrRegion": "10",
+    "tgrComuna": "281",
+    "lat": -43.186,
+    "lon": -71.867
+  },
+  {
+    "codigoSii": "10403",
+    "nombre": "Hualaihué",
+    "nombreApi": "HUALAIHUE",
+    "tgrRegion": "10",
+    "tgrComuna": "308",
+    "lat": -42.097,
+    "lon": -72.404
+  },
+  {
+    "codigoSii": "10404",
+    "nombre": "Palena",
+    "nombreApi": "PALENA",
+    "tgrRegion": "10",
+    "tgrComuna": "282",
+    "lat": -43.616,
+    "lon": -71.818
+  },
+  {
+    "codigoSii": "11101",
+    "nombre": "Coyhaique",
+    "nombreApi": "COYHAIQUE",
+    "tgrRegion": "11",
+    "tgrComuna": "284",
+    "lat": -45.576,
+    "lon": -72.062
+  },
+  {
+    "codigoSii": "11102",
+    "nombre": "Lago Verde",
+    "nombreApi": "LAGO VERDE",
+    "tgrRegion": "11",
+    "tgrComuna": "312",
+    "lat": -44.224,
+    "lon": -71.84
+  },
+  {
+    "codigoSii": "11201",
+    "nombre": "Aysén",
+    "nombreApi": "AYSEN",
+    "tgrRegion": "11",
+    "tgrComuna": "285",
+    "lat": -45.398,
+    "lon": -72.699
+  },
+  {
+    "codigoSii": "11202",
+    "nombre": "Cisnes",
+    "nombreApi": "CISNES",
+    "tgrRegion": "11",
+    "tgrComuna": "286",
+    "lat": -44.728,
+    "lon": -72.683
+  },
+  {
+    "codigoSii": "11203",
+    "nombre": "Guaitecas",
+    "nombreApi": "GUAITECAS",
+    "tgrRegion": "11",
+    "tgrComuna": "309",
+    "lat": -43.878,
+    "lon": -73.749
+  },
+  {
+    "codigoSii": "11301",
+    "nombre": "Cochrane",
+    "nombreApi": "COCHRANE",
+    "tgrRegion": "11",
+    "tgrComuna": "289",
+    "lat": -47.249,
+    "lon": -72.578
+  },
+  {
+    "codigoSii": "11302",
+    "nombre": "O'Higgins",
+    "nombreApi": "O'HIGGINS",
+    "tgrRegion": "11",
+    "tgrComuna": "310",
+    "lat": -48.464,
+    "lon": -72.561
+  },
+  {
+    "codigoSii": "11303",
+    "nombre": "Tortel",
+    "nombreApi": "TORTEL",
+    "tgrRegion": "11",
+    "tgrComuna": "311",
+    "lat": -47.824,
+    "lon": -73.565
+  },
+  {
+    "codigoSii": "11401",
+    "nombre": "Chile Chico",
+    "nombreApi": "CHILE CHICO",
+    "tgrRegion": "11",
+    "tgrComuna": "287",
+    "lat": -46.54,
+    "lon": -71.722
+  },
+  {
+    "codigoSii": "11402",
+    "nombre": "Río Ibáñez",
+    "nombreApi": "RIO IBANEZ",
+    "tgrRegion": "11",
+    "tgrComuna": "288",
+    "lat": -46.294,
+    "lon": -71.936
+  },
+  {
+    "codigoSii": "12101",
+    "nombre": "Punta Arenas",
+    "nombreApi": "PUNTA ARENAS",
+    "tgrRegion": "12",
+    "tgrComuna": "290",
+    "lat": -53.164,
+    "lon": -70.931
+  },
+  {
+    "codigoSii": "12102",
+    "nombre": "Laguna Blanca",
+    "nombreApi": "LAGUNA BLANCA",
+    "tgrRegion": "12",
+    "tgrComuna": "316",
+    "lat": -52.3,
+    "lon": -71.161
+  },
+  {
+    "codigoSii": "12103",
+    "nombre": "Río Verde",
+    "nombreApi": "RIO VERDE",
+    "tgrRegion": "12",
+    "tgrComuna": "314",
+    "lat": -52.581,
+    "lon": -71.513
+  },
+  {
+    "codigoSii": "12104",
+    "nombre": "San Gregorio",
+    "nombreApi": "SAN GREGORIO",
+    "tgrRegion": "12",
+    "tgrComuna": "315",
+    "lat": -52.314,
+    "lon": -69.684
+  },
+  {
+    "codigoSii": "12201",
+    "nombre": "Cabo de Hornos",
+    "nombreApi": "CABO DE HORNOS",
+    "tgrRegion": "12",
+    "tgrComuna": "319",
+    "lat": -54.935,
+    "lon": -67.604
+  },
+  {
+    "codigoSii": "12202",
+    "nombre": "Antártica",
+    "nombreApi": "ANTARTICA",
+    "tgrRegion": "12",
+    "tgrComuna": "888",
+    "lat": -64.359,
+    "lon": -60.82
+  },
+  {
+    "codigoSii": "12301",
+    "nombre": "Porvenir",
+    "nombreApi": "PORVENIR",
+    "tgrRegion": "12",
+    "tgrComuna": "292",
+    "lat": -53.29,
+    "lon": -70.363
+  },
+  {
+    "codigoSii": "12302",
+    "nombre": "Primavera",
+    "nombreApi": "PRIMAVERA",
+    "tgrRegion": "12",
+    "tgrComuna": "317",
+    "lat": -52.712,
+    "lon": -69.25
+  },
+  {
+    "codigoSii": "12303",
+    "nombre": "Timaukel",
+    "nombreApi": "TIMAUKEL",
+    "tgrRegion": "12",
+    "tgrComuna": "318",
+    "lat": -54.288,
+    "lon": -69.164
+  },
+  {
+    "codigoSii": "12401",
+    "nombre": "Puerto Natales",
+    "nombreApi": "PUERTO NATALES",
+    "tgrRegion": "12",
+    "tgrComuna": "291",
+    "lat": -51.722,
+    "lon": -72.521
+  },
+  {
+    "codigoSii": "12402",
+    "nombre": "Torres del Paine",
+    "nombreApi": "TORRES DEL PAINE",
+    "tgrRegion": "12",
+    "tgrComuna": "313",
+    "lat": -50.99,
+    "lon": -73.089
+  }
+]

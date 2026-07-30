@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login SII — Captura de sesión (cliente)</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 16px; background: #f4f6f9; color: #1a3a5c; }
+    h1 { font-size: 18px; }
+    .card { background: #fff; border-radius: 10px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+    iframe { width: 100%; height: 520px; border: 1px solid #ccc; border-radius: 8px; }
+    label { display: block; font-size: 13px; margin: 8px 0 4px; }
+    input, textarea { width: 100%; box-sizing: border-box; padding: 8px; border: 1px solid #ccc; border-radius: 6px; font-size: 13px; }
+    button { margin-top: 10px; padding: 10px 14px; border: 0; border-radius: 6px; background: #1a3a5c; color: #fff; cursor: pointer; }
+    .status { margin-top: 10px; font-size: 13px; white-space: pre-wrap; }
+    code { background: #eef; padding: 1px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Certificado SII — Login del contribuyente</h1>
+
+  <div class="card">
+    <p><strong>Paso 1.</strong> Inicia sesión con tu Clave Tributaria (ventana aislada de SII):</p>
+    <iframe id="siiFrame" src="https://www2.sii.cl/bifurcacion/?originalUrl=https://www2.sii.cl/vica/Menu/ConsultarAntecedentesSC&type=CT"></iframe>
+    <p style="font-size:12px;color:#555">
+      Cuando la URL llegue a <code>vica/Menu/ConsultarAntecedentesSC</code> y el login sea exitoso,
+      la sesión queda activa ~5 min. El servidor <strong>nunca</strong> ve tu clave: solo las cookies de sesión.
+    </p>
+  </div>
+
+  <div class="card">
+    <p><strong>Paso 2.</strong> Pega la sesión capturada y los datos del predio:</p>
+    <label>RUT (con guión, ej. 12345678-9)</label>
+    <input id="rut" placeholder="12345678-9" />
+    <label>Cookies de sesión SII (Cookie header)</label>
+    <textarea id="cookies" rows="3" placeholder="JSESSIONID=...; cookie2=..."></textarea>
+    <label>comunaCnp (código SII de la comuna)</label>
+    <input id="comunaCnp" placeholder="13101" />
+    <label>manzanaCnp</label>
+    <input id="manzanaCnp" placeholder="29" />
+    <label>predioCnp</label>
+    <input id="predioCnp" placeholder="1234" />
+    <button id="btnDescargar">Generar y descargar certificado SII (PDF)</button>
+    <div class="status" id="status"></div>
+  </div>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const status = $("status");
+
+    // ── Contrato para WebView (opción 1, fiel a SiiCertificadoActivity.kt) ──
+    // En un WebView Android, inyecta JS en onPageFinished cuando la URL contenga
+    // "/vica/Menu/ConsultarAntecedentesSC":
+    //
+    //   const rut = localStorage.getItem('userId');
+    //   const cookies = document.cookie; // o CookieManager.getCookie("https://www2.sii.cl")
+    //   window.SiiBridge.entregarSesion(rut, cookies);
+    //
+    // Y expón en la página:
+    window.SiiBridge = {
+      entregarSesion: (rut, cookies) => {
+        $("rut").value = rut || "";
+        $("cookies").value = cookies || "";
+        status.textContent = "✅ Sesión capturada automáticamente desde el WebView.";
+      }
+    };
+
+    function b64ToBlob(b64) {
+      const bin = atob(b64);
+      const len = bin.length;
+      const bytes = new Uint8Array(len);
+      for (let i = 0; i < len; i++) bytes[i] = bin.charCodeAt(i);
+      return new Blob([bytes], { type: "application/pdf" });
+    }
+
+    function descargar(nombre, b64) {
+      const url = URL.createObjectURL(b64ToBlob(b64));
+      const a = document.createElement("a");
+      a.href = url; a.download = nombre; a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    $("btnDescargar").addEventListener("click", async () => {
+      const rut = $("rut").value.trim();
+      const cookies = $("cookies").value.trim();
+      const comunaCnp = $("comunaCnp").value.trim();
+      const manzanaCnp = $("manzanaCnp").value.trim();
+      const predioCnp = $("predioCnp").value.trim();
+      if (!rut || !cookies || !comunaCnp || !manzanaCnp || !predioCnp) {
+        status.textContent = "❌ Completa RUT, cookies y datos del predio.";
+        return;
+      }
+      status.textContent = "⏳ Consultando EAC...";
+      try {
+        const eacResp = await fetch("/api/sii/cert/eac", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ rut, cookies, comunaCnp, manzanaCnp, predioCnp }),
+        });
+        const eacJson = await eacResp.json();
+        const eac = eacJson.ultimoEacAplicado || 0;
+
+        status.textContent = "⏳ Generando certificado...";
+        const certResp = await fetch("/api/sii/cert", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ rut, cookies, comunaCnp, manzanaCnp, predioCnp, ultimoEacAplicado: eac }),
+        });
+        const certJson = await certResp.json();
+        if (!certResp.ok) throw new Error(certJson.error || "Error al generar certificado");
+
+        descargar(`CertSII_${comunaCnp}_${predioCnp}.pdf`, certJson.base64);
+        status.textContent = "✅ PDF generado y descargado.";
+      } catch (err) {
+        status.textContent = "❌ " + err.message;
+      }
+    });
+  </script>
+</body>
+</html>

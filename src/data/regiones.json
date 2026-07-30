@@ -1,0 +1,18 @@
+[
+  { "nombre": "XV - Arica y Parinacota", "tgrCode": "15" },
+  { "nombre": "I - Tarapacá", "tgrCode": "1" },
+  { "nombre": "II - Antofagasta", "tgrCode": "2" },
+  { "nombre": "III - Atacama", "tgrCode": "3" },
+  { "nombre": "IV - Coquimbo", "tgrCode": "4" },
+  { "nombre": "V - Valparaíso", "tgrCode": "5" },
+  { "nombre": "RM - Metropolitana", "tgrCode": "13" },
+  { "nombre": "VI - O'Higgins", "tgrCode": "6" },
+  { "nombre": "VII - Maule", "tgrCode": "7" },
+  { "nombre": "XVI - Ñuble", "tgrCode": "16" },
+  { "nombre": "VIII - Biobío", "tgrCode": "8" },
+  { "nombre": "IX - La Araucanía", "tgrCode": "9" },
+  { "nombre": "XIV - Los Ríos", "tgrCode": "14" },
+  { "nombre": "X - Los Lagos", "tgrCode": "10" },
+  { "nombre": "XI - Aysén", "tgrCode": "11" },
+  { "nombre": "XII - Magallanes", "tgrCode": "12" }
+]

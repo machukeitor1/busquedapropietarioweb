@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Búsqueda por Rol CL</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; background: #f0f2f5; color: #1a3a5c; }
+    .header { background: #1a3a5c; color: #fff; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .header h1 { margin: 0; font-size: 20px; font-weight: 600; }
+    .header span { font-size: 13px; opacity: .8; }
+    .container { max-width: 800px; margin: 0 auto; padding: 16px; }
+    .card { background: #fff; border-radius: 10px; padding: 18px; margin-bottom: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+    .card-title { font-size: 15px; font-weight: 600; margin: 0 0 12px; }
+    label { display: block; font-size: 12px; margin: 8px 0 3px; color: #475569; font-weight: 500; }
+    select, input[type="text"], input[type="password"] { width: 100%; padding: 9px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; background: #fff; transition: border-color .15s; }
+    select:focus, input:focus { outline: none; border-color: #1a3a5c; }
+    .row { display: flex; gap: 10px; }
+    .row > div { flex: 1; min-width: 0; }
+    button { padding: 10px 18px; border: 0; border-radius: 6px; font-size: 14px; font-weight: 500; cursor: pointer; transition: opacity .15s; }
+    button:hover { opacity: .85; }
+    button:disabled { opacity: .5; cursor: not-allowed; }
+    .btn-primary { background: #1a3a5c; color: #fff; }
+    .btn-success { background: #15803d; color: #fff; }
+    .btn-danger { background: #b91c1c; color: #fff; }
+    .btn-outline { background: transparent; border: 1px solid #1a3a5c; color: #1a3a5c; }
+    .btn-sm { padding: 6px 12px; font-size: 12px; }
+    .btn-full { width: 100%; margin-top: 12px; }
+    .result-item { border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+    .result-item h4 { margin: 0 0 4px; font-size: 15px; }
+    .muted { color: #64748b; font-size: 13px; }
+    .aval { color: #15803d; font-weight: 600; margin-top: 4px; }
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 1000; align-items: center; justify-content: center; }
+    .modal-overlay.open { display: flex; }
+    .modal { background: #fff; border-radius: 12px; padding: 24px; width: 90%; max-width: 420px; box-shadow: 0 10px 40px rgba(0,0,0,.2); }
+    .modal h2 { margin: 0 0 16px; font-size: 18px; }
+    .modal .hint { font-size: 12px; color: #64748b; margin-bottom: 12px; }
+    .modal .actions { display: flex; gap: 8px; margin-top: 16px; }
+    .modal .actions button { flex: 1; }
+    #sessionBar { display: none; align-items: center; gap: 8px; padding: 8px 16px; background: #f0fdf4; border-bottom: 1px solid #bbf7d0; font-size: 13px; flex-wrap: wrap; }
+    #sessionBar.visible { display: flex; }
+    #estado { font-size: 13px; min-height: 20px; margin-top: 8px; }
+    #historial { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    #historial .chip { background: #eef2ff; color: #1a3a5c; padding: 6px 14px; border-radius: 16px; font-size: 12px; cursor: pointer; border: 1px solid #c7d2fe; }
+    #historial .chip:hover { background: #e0e7ff; }
+    .loading { display: inline-block; width: 16px; height: 16px; border: 2px solid #e2e8f0; border-top-color: #1a3a5c; border-radius: 50%; animation: spin .6s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .hidden { display: none; }
+    .mt-8 { margin-top: 8px; }
+    #loginError { color: #b91c1c; font-size: 13px; margin-top: 8px; min-height: 18px; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Búsqueda por Rol CL</h1>
+    <span>Consulta ROL catastral SII · Chile</span>
+  </div>
+  <button id="btnLoginToggle" class="btn-sm btn-outline" style="border-color:#fff;color:#fff;">🔑 Iniciar sesión SII</button>
+</div>
+
+<div id="sessionBar">
+  <span id="sessionStatus">✅ Sesión SII activa</span>
+  <span style="font-size:12px;color:#666;" id="sessionTimer"></span>
+  <button id="btnLogout" class="btn-sm btn-danger" style="margin-left:auto;">Cerrar sesión</button>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <div class="card-title">🔍 Buscar propiedad</div>
+    <label>Región</label>
+    <select id="region"><option value="">Cargando...</option></select>
+
+    <label>Comuna</label>
+    <select id="comuna" disabled><option value="">Selecciona región primero</option></select>
+
+    <div class="row">
+      <div><label>Calle</label><input type="text" id="calle" placeholder="Ej. Alameda" /></div>
+      <div><label>Número</label><input type="text" id="numero" placeholder="Ej. 1000" /></div>
+    </div>
+
+    <button class="btn-primary btn-full" onclick="buscar()">🔎 Buscar ROL</button>
+    <div id="estado"></div>
+    <div id="historial"></div>
+  </div>
+
+  <div id="resultados"></div>
+
+</div>
+
+<!-- Modal Login SII -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal">
+    <h2>🔑 Iniciar sesión SII</h2>
+    <p class="hint">Ingresa tu Clave Tributaria para que el backend automatice el login vía Playwright. Las credenciales viajan cifradas y nunca se almacenan en disco.</p>
+    <label>RUT (con guión)</label>
+    <input type="text" id="loginRut" placeholder="12345678-9" autocomplete="off" />
+    <label>Clave Tributaria</label>
+    <input type="password" id="loginClave" placeholder="••••••••" autocomplete="off" />
+    <div id="loginError"></div>
+    <div class="actions">
+      <button class="btn-outline" onclick="cerrarLogin()">Cancelar</button>
+      <button class="btn-primary" onclick="iniciarSesion()" id="btnLoginSubmit">Iniciar sesión</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let sessionId = localStorage.getItem("sessionId") || null;
+let sessionTimer = null;
+let comunasCache = [];
+
+function formatPesos(v) { return "$" + Number(v).toLocaleString("es-CL"); }
+
+function comunaSeleccionada() {
+  return comunasCache.find((c) => c.codigoSii === $("comuna").value) || null;
+}
+
+// ── Catálogo ─────────────────────────────────────────────────────────────
+
+async function cargarRegiones() {
+  try {
+    const r = await fetch("/api/regiones");
+    const regiones = await r.json();
+    $("region").innerHTML =
+      '<option value="">Selecciona región</option>' +
+      regiones.map((x) => `<option value="${x.tgrCode}">${x.nombre}</option>`).join("");
+  } catch (e) {
+    $("region").innerHTML = '<option value="">Error al cargar regiones</option>';
+  }
+}
+
+$("region").addEventListener("change", async () => {
+  const reg = $("region").value;
+  $("comuna").disabled = !reg;
+  if (!reg) {
+    $("comuna").innerHTML = '<option value="">Elige región primero</option>';
+    return;
+  }
+  try {
+    const r = await fetch("/api/comunas?region=" + reg);
+    comunasCache = await r.json();
+    $("comuna").innerHTML =
+      '<option value="">Selecciona comuna</option>' +
+      comunasCache.map((c) => `<option value="${c.codigoSii}">${c.nombre}</option>`).join("");
+    $("comuna").disabled = false;
+  } catch (e) {
+    $("comuna").innerHTML = '<option value="">Error al cargar comunas</option>';
+  }
+});
+
+// ── Búsqueda ─────────────────────────────────────────────────────────────
+
+async function buscar() {
+  const calle = $("calle").value.trim();
+  const numero = $("numero").value.trim();
+  const c = comunaSeleccionada();
+
+  if (!c) { $("estado").textContent = "❌ Selecciona región y comuna."; return; }
+  if (!calle || !numero) { $("estado").textContent = "❌ Ingresa calle y número."; return; }
+
+  $("estado").textContent = "⏳ Consultando SII...";
+  $("resultados").innerHTML = "";
+  try {
+    const r = await fetch("/api/sii/buscar", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ region: $("region").value, comuna: c.nombre, calle, numero }),
+    });
+    const j = await r.json();
+    if (!r.ok) { $("estado").textContent = "❌ " + (j.error || JSON.stringify(j)); return; }
+    if (!j.predios.length) {
+      $("estado").textContent = "⚠️ Sin resultados. Prueba la calle sin tildes y en minúsculas.";
+      return;
+    }
+    $("estado").textContent = `✅ ${j.predios.length} resultado(s).`;
+    $("resultados").innerHTML = j.predios.map((p, i) => {
+      const [rol, subRol] = p.rol.includes("-") ? p.rol.split("-") : [p.rol, ""];
+      const aval = p.total > 0 ? `<div class="aval">💰 Avalúo fiscal: ${formatPesos(p.total)}</div>` : "";
+      const btnTgr = p.rol.includes("-")
+        ? `<button class="btn-success btn-sm mt-8" onclick="certTgr(this,'${c.tgrRegion}','${c.tgrComuna}','${rol}','${subRol}')">📄 Certificado TGR</button>`
+        : "";
+      let btnSii = "";
+      if (p.rol.includes("-")) {
+        if (sessionId) {
+          btnSii = `<button class="btn-primary btn-sm mt-8" style="margin-left:6px;" onclick="certSii(this,${c.codigoSii},${p.manzana},${p.predio})">📄 Certificado SII</button>`;
+        } else {
+          btnSii = `<button class="btn-outline btn-sm mt-8" style="margin-left:6px;" onclick="abrirLogin()">🔑 Login SII (para certificado)</button>`;
+        }
+      }
+      return `<div class="result-item">
+        <h4>🏠 ${p.direccion}</h4>
+        <div class="muted">📋 ROL: ${p.rol} · Manzana: ${p.manzana} · Predio: ${p.predio}</div>
+        <div class="muted">🏗 ${p.destino} — ${p.comuna}</div>
+        ${aval}
+        <div style="margin-top:6px;">${btnTgr}${btnSii}</div>
+      </div>`;
+    }).join("");
+    guardarHistorial(c.codigoSii, c.nombre, calle, numero);
+  } catch (e) {
+    $("estado").textContent = "❌ " + e.message;
+  }
+}
+
+// ── Certificado TGR ─────────────────────────────────────────────────────
+
+async function certTgr(btn, region, comuna, rol, subRol) {
+  if (btn) { btn.disabled = true; btn.textContent = "⏳ Generando..."; }
+  try {
+    const r = await fetch("/api/tgr/certificado", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ region, comuna, rol, subRol }),
+    });
+    const j = await r.json();
+    if (!r.ok) { alert("❌ " + (j.error || JSON.stringify(j))); return; }
+    descargarBase64(j.filename, j.base64);
+  } catch (e) { alert("❌ " + e.message); }
+  finally { if (btn) { btn.disabled = false; btn.textContent = "📄 Certificado TGR"; } }
+}
+
+// ── Certificado SII ─────────────────────────────────────────────────────
+
+async function certSii(btn, comunaCnp, manzanaCnp, predioCnp) {
+  if (!sessionId) { abrirLogin(); return; }
+  if (btn) { btn.disabled = true; btn.textContent = "⏳ Consultando EAC..."; }
+  try {
+    const eacResp = await fetch("/api/sii/cert/eac", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Session-ID": sessionId },
+      body: JSON.stringify({ comunaCnp, manzanaCnp, predioCnp }),
+    });
+    const eacJson = await eacResp.json();
+    if (!eacResp.ok) throw new Error(eacJson.error || "Error al obtener EAC");
+    const eac = eacJson.ultimoEacAplicado || 0;
+
+    if (btn) btn.textContent = "⏳ Generando certificado...";
+    const certResp = await fetch("/api/sii/cert", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Session-ID": sessionId },
+      body: JSON.stringify({ comunaCnp, manzanaCnp, predioCnp, ultimoEacAplicado: eac }),
+    });
+    const certJson = await certResp.json();
+    if (!certResp.ok) throw new Error(certJson.error || "Error al generar certificado");
+
+    const filename = `CertSII_${comunaCnp}_${predioCnp}.pdf`;
+    descargarBase64(filename, certJson.base64);
+    extenderSesion();
+  } catch (e) {
+    if (e.message.includes("expirada") || e.message.includes("401")) {
+      alert("❌ Sesión expirada. Debes iniciar sesión nuevamente.");
+      cerrarSesionLocal();
+    } else {
+      alert("❌ " + e.message);
+    }
+  }
+  finally { if (btn) { btn.disabled = false; btn.textContent = "📄 Certificado SII"; } }
+}
+
+function descargarBase64(filename, b64) {
+  const bin = atob(b64);
+  const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  const blob = new Blob([bytes], { type: "application/pdf" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = filename; a.click();
+  URL.revokeObjectURL(url);
+}
+
+// ── Login SII (Opción A: backend con Playwright) ────────────────────────
+
+function abrirLogin() {
+  $("loginError").textContent = "";
+  $("loginRut").value = "";
+  $("loginClave").value = "";
+  $("loginModal").classList.add("open");
+  setTimeout(() => $("loginRut").focus(), 100);
+}
+
+function cerrarLogin() {
+  $("loginModal").classList.remove("open");
+}
+
+async function iniciarSesion() {
+  const rut = $("loginRut").value.trim();
+  const clave = $("loginClave").value;
+  if (!rut || !clave) { $("loginError").textContent = "Ingresa RUT y clave."; return; }
+
+  $("loginError").textContent = "";
+  $("btnLoginSubmit").disabled = true;
+  $("btnLoginSubmit").textContent = "⏳ Iniciando sesión...";
+
+  try {
+    const r = await fetch("/api/sii/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ rut, clave }),
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || "Error al iniciar sesión");
+
+    sessionId = j.sessionId;
+    localStorage.setItem("sessionId", sessionId);
+    mostrarSessionBar(j.expiresIn || 300);
+    cerrarLogin();
+    $("resultados").innerHTML = "";
+    buscar();
+  } catch (e) {
+    $("loginError").textContent = "❌ " + e.message;
+  } finally {
+    $("btnLoginSubmit").disabled = false;
+    $("btnLoginSubmit").textContent = "Iniciar sesión";
+  }
+}
+
+function cerrarSesionLocal() {
+  sessionId = null;
+  localStorage.removeItem("sessionId");
+  localStorage.removeItem("sessionExpires");
+  localStorage.removeItem("sessionTtl");
+  $("sessionBar").classList.remove("visible");
+  $("btnLoginToggle").style.display = "";
+  if (sessionTimer) { clearInterval(sessionTimer); sessionTimer = null; }
+  $("resultados").innerHTML = "";
+}
+
+async function cerrarSesion() {
+  if (sessionId) {
+    try {
+      await fetch("/api/sii/logout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sessionId }),
+      });
+    } catch (e) {}
+  }
+  cerrarSesionLocal();
+}
+
+function extenderSesion() {
+  if (!sessionId) return;
+  fetch("/api/sii/session/" + sessionId + "/extend", { method: "POST" }).catch(() => {});
+}
+
+function mostrarSessionBar(ttlSec) {
+  $("sessionBar").classList.add("visible");
+  $("btnLoginToggle").style.display = "none";
+  if (sessionTimer) clearInterval(sessionTimer);
+
+  const expiresAt = Date.now() + (ttlSec || 300) * 1000;
+  localStorage.setItem("sessionExpires", String(expiresAt));
+
+  sessionTimer = setInterval(() => {
+    const remaining = Math.max(0, Math.floor((new Date(parseInt(localStorage.getItem("sessionExpires"))) - Date.now()) / 1000));
+    if (remaining <= 0) { cerrarSesionLocal(); return; }
+    const min = Math.floor(remaining / 60);
+    const sec = String(remaining % 60).padStart(2, "0");
+    $("sessionTimer").textContent = `(expira en ${min}:${sec})`;
+  }, 1000);
+}
+
+$("btnLoginToggle").addEventListener("click", abrirLogin);
+$("btnLogout").addEventListener("click", cerrarSesion);
+
+// ── Historial ───────────────────────────────────────────────────────────
+
+function guardarHistorial(codigoSii, comunaNombre, calle, numero) {
+  let h = JSON.parse(localStorage.getItem("historial") || "[]");
+  h = h.filter((x) => !(x.codigoSii === codigoSii && x.calle === calle && x.numero === numero));
+  h.unshift({ codigoSii, comunaNombre, calle, numero });
+  if (h.length > 5) h = h.slice(0, 5);
+  localStorage.setItem("historial", JSON.stringify(h));
+  mostrarHistorial();
+}
+
+async function mostrarHistorial() {
+  const h = JSON.parse(localStorage.getItem("historial") || "[]");
+  const el = $("historial");
+  if (!h.length) { el.innerHTML = ""; return; }
+
+  el.innerHTML = h.map((item) =>
+    `<span class="chip" data-codigo="${item.codigoSii}" data-calle="${item.calle}" data-numero="${item.numero}">🕐 ${item.comunaNombre || item.codigoSii} · ${item.calle} ${item.numero}</span>`
+  ).join("");
+
+  el.querySelectorAll(".chip").forEach((chip) => {
+    chip.addEventListener("click", async () => {
+      const codigoSii = chip.dataset.codigo;
+      const calle = chip.dataset.calle;
+      const numero = chip.dataset.numero;
+      $("estado").textContent = "⏳ Recuperando búsqueda...";
+      const regionSelect = $("region");
+      const comunaSelect = $("comuna");
+      for (let i = 0; i < regionSelect.options.length; i++) {
+        const opt = regionSelect.options[i];
+        if (!opt.value) continue;
+        const resp = await fetch("/api/comunas?region=" + opt.value);
+        const comunasRegion = await resp.json();
+        const found = comunasRegion.find(c => c.codigoSii === codigoSii);
+        if (found) {
+          regionSelect.selectedIndex = i;
+          regionSelect.dispatchEvent(new Event("change"));
+          await new Promise(r => setTimeout(r, 200));
+          for (let j = 0; j < comunaSelect.options.length; j++) {
+            if (comunaSelect.options[j].value === codigoSii) {
+              comunaSelect.selectedIndex = j;
+              break;
+            }
+          }
+          break;
+        }
+      }
+      $("calle").value = calle;
+      $("numero").value = numero;
+      buscar();
+    });
+  });
+}
+
+// ── Init ────────────────────────────────────────────────────────────────
+
+cargarRegiones();
+mostrarHistorial();
+const storedExpires = localStorage.getItem("sessionExpires");
+if (sessionId && storedExpires && parseInt(storedExpires) > Date.now()) {
+  mostrarSessionBar(Math.floor((parseInt(storedExpires) - Date.now()) / 1000));
+} else if (sessionId) {
+  cerrarSesionLocal();
+}
+</script>
+</body>
+</html>
