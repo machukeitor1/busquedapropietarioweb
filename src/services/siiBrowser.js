@@ -15,7 +15,14 @@ class SiiBrowser {
 
     const browser = await chromium.launch({
       headless: HEADLESS,
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+        "--single-process",
+        "--no-zygote",
+        "--js-flags=--max-old-space-size=128",
+      ],
     });
 
     try {

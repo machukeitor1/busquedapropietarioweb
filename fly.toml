@@ -1,0 +1,37 @@
+app = "busquedapropietarioweb"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[env]
+  PORT = "8080"
+  CORS_ORIGIN = "*"
+  SII_TIMEOUT = "15000"
+  TGR_TIMEOUT = "30000"
+  PLAYWRIGHT_HEADLESS = "true"
+  PLAYWRIGHT_TIMEOUT = "30000"
+  SESSION_TTL_SECONDS = "300"
+  SESSION_CLEANUP_SECONDS = "60"
+
+[experimental]
+  auto_rollback = true
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+  processes = ["app"]
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+    force_https = true
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+  [[services.concurrency]]
+    type = "connections"
+    hard_limit = 25
+    soft_limit = 20
