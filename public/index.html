@@ -136,11 +136,7 @@ async function buscar() {
     }
     $("estado").textContent = `✅ ${j.predios.length} resultado(s).`;
     $("resultados").innerHTML = j.predios.map((p, i) => {
-      const [rol, subRol] = p.rol.includes("-") ? p.rol.split("-") : [p.rol, ""];
       const aval = p.total > 0 ? `<div class="aval">💰 Avalúo fiscal: ${formatPesos(p.total)}</div>` : "";
-      const btnTgr = p.rol.includes("-")
-        ? `<button class="btn-success btn-sm mt-8" onclick="certTgr(this,'${c.tgrRegion}','${c.tgrComuna}','${rol}','${subRol}')">📄 Certificado TGR</button>`
-        : "";
       const btnSii = p.rol.includes("-")
         ? `<a href="/sii-login.html" class="btn-outline btn-sm mt-8" style="display:inline-block;text-decoration:none;margin-left:6px;padding:6px 12px;border-radius:6px;font-size:12px;">🔑 Certificado SII</a>`
         : "";
@@ -149,28 +145,13 @@ async function buscar() {
         <div class="muted">📋 ROL: ${p.rol} · Manzana: ${p.manzana} · Predio: ${p.predio}</div>
         <div class="muted">🏗 ${p.destino} — ${p.comuna}</div>
         ${aval}
-        <div style="margin-top:6px;">${btnTgr}${btnSii}</div>
+        ${btnSii}
       </div>`;
     }).join("");
     guardarHistorial(c.codigoSii, c.nombre, calle, numero);
   } catch (e) {
     $("estado").textContent = "❌ " + e.message;
   }
-}
-
-async function certTgr(btn, region, comuna, rol, subRol) {
-  if (btn) { btn.disabled = true; btn.textContent = "⏳ Generando..."; }
-  try {
-    const r = await fetch("/api/tgr/certificado", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ region, comuna, rol, subRol }),
-    });
-    const j = await r.json();
-    if (!r.ok) { alert("❌ " + (j.error || JSON.stringify(j))); return; }
-    descargarBase64(j.filename, j.base64);
-  } catch (e) { alert("❌ " + e.message); }
-  finally { if (btn) { btn.disabled = false; btn.textContent = "📄 Certificado TGR"; } }
 }
 
 function descargarBase64(filename, b64) {
