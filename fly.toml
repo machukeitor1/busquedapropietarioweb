@@ -12,11 +12,7 @@ processes = []
   CORS_ORIGIN = "*"
   SII_TIMEOUT = "15000"
   TGR_TIMEOUT = "30000"
-  PLAYWRIGHT_HEADLESS = "true"
-  PLAYWRIGHT_TIMEOUT = "30000"
-  PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH = "/usr/bin/chromium"
-  SESSION_TTL_SECONDS = "300"
-  SESSION_CLEANUP_SECONDS = "60"
+  TGR_TIMEOUT = "30000"
 
 [experimental]
   auto_rollback = true

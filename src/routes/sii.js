@@ -1,75 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const SiiBrowser = require("../services/siiBrowser");
-const sessions = require("../sessions");
 const sii = require("../services/siiClient");
 const { findComuna } = require("../comunas");
 
 const SII_TIMEOUT = parseInt(process.env.SII_TIMEOUT, 10) || 15000;
-
-function resolverSesion(req) {
-  const sessionId =
-    req.body?.sessionId || req.headers["x-session-id"];
-  if (sessionId) {
-    const s = sessions.getSesion(sessionId);
-    if (s) return s;
-  }
-  return null;
-}
-
-// POST /api/sii/login  { rut, clave }
-router.post("/login", async (req, res) => {
-  try {
-    const { rut, clave } = req.body || {};
-    if (!rut || !clave) {
-      return res.status(400).json({ error: "Faltan rut o clave" });
-    }
-    const browser = new SiiBrowser();
-    const sesion = await browser.login(rut, clave);
-    const sessionId = sessions.crearSesion(
-      sesion.rut,
-      sesion.userId,
-      sesion.cookies
-    );
-    res.json({
-      sessionId,
-      userId: sesion.userId,
-      expiresIn: parseInt(process.env.SESSION_TTL_SECONDS, 10) || 300,
-    });
-  } catch (e) {
-    const msg =
-      e.message.includes("timeout")
-        ? "Timeout: el portal SII no respondió a tiempo"
-        : e.message;
-    res.status(502).json({ error: msg });
-  }
-});
-
-// GET /api/sii/session/:id
-router.get("/session/:id", (req, res) => {
-  const s = sessions.getSesion(req.params.id);
-  if (!s) {
-    return res.status(404).json({ error: "Sesión no encontrada o expirada" });
-  }
-  res.json({ rut: s.rut, userId: s.userId, active: true });
-});
-
-// POST /api/sii/session/:id/extend
-router.post("/session/:id/extend", (req, res) => {
-  const ok = sessions.extenderSesion(req.params.id);
-  if (!ok) {
-    return res.status(404).json({ error: "Sesión no encontrada o expirada" });
-  }
-  res.json({ extended: true });
-});
-
-// POST /api/sii/logout
-router.post("/logout", (req, res) => {
-  const sessionId =
-    req.body?.sessionId || req.headers["x-session-id"];
-  if (sessionId) sessions.eliminarSesion(sessionId);
-  res.json({ ok: true });
-});
 
 // POST /api/sii/buscar  { region, comuna, calle, numero }
 router.post("/buscar", async (req, res) => {
@@ -100,19 +34,12 @@ router.post("/buscar", async (req, res) => {
   }
 });
 
-// POST /api/sii/cert/eac — acepta sessionId O rut+cookies
+// POST /api/sii/cert/eac  { rut, cookies, comunaCnp, manzanaCnp, predioCnp }
 router.post("/cert/eac", async (req, res) => {
   try {
-    const sesion = resolverSesion(req);
-    const rut = sesion?.rut || req.body?.rut;
-    const cookies = sesion?.cookies || req.body?.cookies;
-    const { comunaCnp, manzanaCnp, predioCnp } = req.body || {};
-
+    const { rut, cookies, comunaCnp, manzanaCnp, predioCnp } = req.body || {};
     if (!rut || !cookies || !comunaCnp || !manzanaCnp || !predioCnp) {
-      return res.status(400).json({
-        error:
-          "Faltan parámetros. Envía sessionId en header X-Session-ID o body, o rut+cookies+comunaCnp+manzanaCnp+predioCnp",
-      });
+      return res.status(400).json({ error: "Faltan parámetros (rut, cookies, comunaCnp, manzanaCnp, predioCnp)" });
     }
     const eac = await sii.obtenerUltimoEac(
       rut,
@@ -127,20 +54,12 @@ router.post("/cert/eac", async (req, res) => {
   }
 });
 
-// POST /api/sii/cert — acepta sessionId O rut+cookies
+// POST /api/sii/cert  { rut, cookies, comunaCnp, manzanaCnp, predioCnp, ultimoEacAplicado }
 router.post("/cert", async (req, res) => {
   try {
-    const sesion = resolverSesion(req);
-    const rut = sesion?.rut || req.body?.rut;
-    const cookies = sesion?.cookies || req.body?.cookies;
-    const { comunaCnp, manzanaCnp, predioCnp, ultimoEacAplicado } =
-      req.body || {};
-
+    const { rut, cookies, comunaCnp, manzanaCnp, predioCnp, ultimoEacAplicado } = req.body || {};
     if (!rut || !cookies || !comunaCnp || !manzanaCnp || !predioCnp) {
-      return res.status(400).json({
-        error:
-          "Faltan parámetros. Envía sessionId en header X-Session-ID o body, o rut+cookies+comunaCnp+manzanaCnp+predioCnp",
-      });
+      return res.status(400).json({ error: "Faltan parámetros" });
     }
     const eac = Number(ultimoEacAplicado) || 0;
     const base64 = await sii.obtenerCertificadoBase64(

@@ -1,9 +1,4 @@
-FROM node:22-bookworm-slim
-
-RUN apt-get update && apt-get install -y chromium --no-install-recommends \
-    && rm -rf /var/lib/apt/lists/*
-
-ENV PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium
+FROM node:22-alpine
 
 WORKDIR /app
 
