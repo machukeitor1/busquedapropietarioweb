@@ -1,11 +1,10 @@
-FROM node:22-bullseye-slim
+FROM mcr.microsoft.com/playwright:v1.62.1-focal
 
+USER root
 WORKDIR /app
 
 COPY package*.json ./
 RUN npm ci --omit=dev
-
-RUN npx playwright install --with-deps chromium
 
 COPY . .
 
