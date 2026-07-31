@@ -6,6 +6,7 @@ const TARGET_PREFIX = "/vica/Menu/ConsultarAntecedentesSC";
 
 const HEADLESS = process.env.PLAYWRIGHT_HEADLESS !== "false";
 const BROWSER_TIMEOUT = parseInt(process.env.PLAYWRIGHT_TIMEOUT, 10) || 30000;
+const CHROMIUM_PATH = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH;
 
 class SiiBrowser {
   async login(rut, clave) {
@@ -14,6 +15,7 @@ class SiiBrowser {
     }
 
     const browser = await chromium.launch({
+      executablePath: CHROMIUM_PATH || undefined,
       headless: HEADLESS,
       args: [
         "--no-sandbox",
