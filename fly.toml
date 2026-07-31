@@ -11,7 +11,6 @@ processes = []
   PORT = "8080"
   CORS_ORIGIN = "*"
   SII_TIMEOUT = "15000"
-  TGR_TIMEOUT = "30000"
 
 [experimental]
   auto_rollback = true

@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const siiRoutes = require("./routes/sii");
-const tgrRoutes = require("./routes/tgr");
 const catalogRoutes = require("./routes/catalog");
 
 const app = express();
@@ -16,7 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/health", (req, res) => res.json({ ok: true }));
 
 app.use("/api/sii", siiRoutes);
-app.use("/api/tgr", tgrRoutes);
 app.use("/api", catalogRoutes);
 
 // Frontend de login SII (opción 1: captura de cookies en cliente WebView)
